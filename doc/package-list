@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 com.FCI.SWE.Controller
 com.FCI.SWE.Models
 com.FCI.SWE.Services
 com.FCI.SWE.ServicesModels
+=======
+com.FCI.SWE.Models
+com.FCI.SWE.Services
+com.FCI.SWE.SocialNetwork
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40

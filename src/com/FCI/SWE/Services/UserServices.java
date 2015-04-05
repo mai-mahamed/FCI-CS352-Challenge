@@ -22,16 +22,24 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.glassfish.jersey.server.mvc.Viewable;
+<<<<<<< HEAD
 import org.json.simple.JSONArray;
+=======
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import com.FCI.SWE.Models.User;
 import com.FCI.SWE.ServicesModels.FriendEntity;
+<<<<<<< HEAD
 import com.FCI.SWE.ServicesModels.GroupMessageEntity;
 import com.FCI.SWE.ServicesModels.MessageEntity;
 import com.FCI.SWE.ServicesModels.UserEntity;
+=======
+import com.FCI.SWE.ServicesModels.UserEntity;
+
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
 /**
  * This class contains REST services, also contains action function for web
  * application
@@ -114,7 +122,10 @@ public class UserServices {
 
 	}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
 	///////////////////////////////////////////////////////////////
 	@POST
 	@Path("/SendFriendRequestService")
@@ -162,6 +173,7 @@ public class UserServices {
 	
 	
 
+<<<<<<< HEAD
 	
 	@POST
 	@Path("/SendFriendMessageService")
@@ -221,5 +233,7 @@ public class UserServices {
 		return user;
 
 	}
+=======
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
 
 }

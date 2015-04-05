@@ -24,14 +24,20 @@ import javax.ws.rs.core.Response;
 import org.glassfish.jersey.server.mvc.Viewable;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+<<<<<<< HEAD
 import org.json.simple.JSONValue;
+=======
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import com.FCI.SWE.Models.User;
 import com.FCI.SWE.ServicesModels.UserEntity;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
 /**
  * This class contains REST services, also contains action function for web
  * application
@@ -93,7 +99,10 @@ public class UserController {
 		return Response.ok(new Viewable("/jsp/SendFriendRequest")).build();
 	}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
 	
 	@POST
 	@Path("/SendFriendRequestService")
@@ -103,7 +112,11 @@ public class UserController {
 		String urlParameters = "Frienduname=" + fname+"&UID="+id ;
 
 		String retJson = Connection.connect(
+<<<<<<< HEAD
 				"http://localhost:8888/rest/SendFriendRequestService", urlParameters,
+=======
+				"http://challengefci2015.appspot.com/rest/SendFriendRequestService", urlParameters,
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
 				"POST", "application/x-www-form-urlencoded;charset=UTF-8");
 
 		JSONParser parser = new JSONParser();
@@ -153,7 +166,11 @@ public class UserController {
 	public String response(@FormParam("uname") String uname,
 			@FormParam("email") String email, @FormParam("password") String pass) {
 
+<<<<<<< HEAD
 		String serviceUrl = "http://localhost:8888/rest/RegistrationService";
+=======
+		String serviceUrl = "http://challengefci2015.appspot.com/rest/RegistrationService";
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
 		String urlParameters = "uname=" + uname + "&email=" + email
 				+ "&password=" + pass;
 		String retJson = Connection.connect(serviceUrl, urlParameters, "POST",
@@ -198,7 +215,11 @@ public class UserController {
 		String urlParameters = "uname=" + uname + "&password=" + pass;
 
 		String retJson = Connection.connect(
+<<<<<<< HEAD
 				"http://localhost:8888/rest/LoginService", urlParameters,
+=======
+				"http://challengefci2015.appspot.com/rest/LoginService", urlParameters,
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
 				"POST", "application/x-www-form-urlencoded;charset=UTF-8");
 
 		JSONParser parser = new JSONParser();
@@ -236,7 +257,11 @@ public class UserController {
         
 		String urlParameters = "uname="+uname+"&ID="+id;
 		String retJson = Connection.connect(
+<<<<<<< HEAD
 				"http://localhost:8888/rest/activeFriendRequests", urlParameters,
+=======
+				"http://challengefci2015.appspot.com/rest/activeFriendRequests", urlParameters,
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
 				"POST", "application/x-www-form-urlencoded;charset=UTF-8");
 		
 		return Response.ok(new Viewable("/jsp/active")).build();
@@ -251,7 +276,11 @@ public class UserController {
 		String urlParameters = "&ID="+id;
 		
 		String retJson = Connection.connect(
+<<<<<<< HEAD
 				"http://localhost:8888/rest/ShowFriendRequests", urlParameters,
+=======
+				"http://challengefci2015.appspot.com/rest/ShowFriendRequests", urlParameters,
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
 				"POST", "application/x-www-form-urlencoded;charset=UTF-8");
 		
 		JSONParser parser = new JSONParser();
@@ -281,6 +310,7 @@ public class UserController {
 		
 	}
 
+<<<<<<< HEAD
 	@GET
 	@Path("/SendMessageToFriend")
 	public Response SendMessageTOFriend() {
@@ -416,3 +446,7 @@ public Response ShowMessage() {
 
 }
 
+=======
+	
+}
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40

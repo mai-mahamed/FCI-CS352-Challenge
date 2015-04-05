@@ -44,6 +44,9 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="F:/SW2/jstl-1.2.jar"/>
+=======
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

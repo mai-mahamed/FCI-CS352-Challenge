@@ -22,14 +22,16 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.glassfish.jersey.server.mvc.Viewable;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import com.FCI.SWE.Models.User;
 import com.FCI.SWE.ServicesModels.FriendEntity;
+import com.FCI.SWE.ServicesModels.GroupMessageEntity;
+import com.FCI.SWE.ServicesModels.MessageEntity;
 import com.FCI.SWE.ServicesModels.UserEntity;
-
 /**
  * This class contains REST services, also contains action function for web
  * application
@@ -112,6 +114,7 @@ public class UserServices {
 
 	}
 
+
 	///////////////////////////////////////////////////////////////
 	@POST
 	@Path("/SendFriendRequestService")
@@ -159,5 +162,64 @@ public class UserServices {
 	
 	
 
+	
+	@POST
+	@Path("/SendFriendMessageService")
+	public String SendFriendMessageService(@FormParam("FriendName") String uname,@FormParam("Message")String msg, @FormParam("UserName") String Currentuser)
+	{
+		JSONObject object2 = new JSONObject();
+		MessageEntity fuser=new MessageEntity(Currentuser,uname,msg);
+		fuser.saveFriendUser();
+		    object2.put("Status","OK");
+
+		return object2.toString();
+		
+	}
+
+	@POST
+	@Path("/SendGroupChatService")
+	public String SendGroupChatService(@FormParam("Name") String name ,@FormParam("Name1") String name1 , @FormParam("Name2") String name2 , @FormParam("Name3") String name3 ,@FormParam("Name4") String name4 , @FormParam("Conversation") String conversation , @FormParam("Message") String message)
+	{
+		JSONObject object2 = new JSONObject();
+		
+		GroupMessageEntity fuser=new GroupMessageEntity(name, name1,name2,name3,name4,conversation,message);
+		fuser.saveGroupMessage();
+		    object2.put("Status","OK");
+
+		return object2.toString();
+		
+	}
+
+	
+	@POST
+	@Path("/ShowNotificationService")
+	public String ShowNotificationService(@FormParam("ID") long id) {
+		
+		
+		JSONArray array=new JSONArray();
+		Vector<Long> user= new Vector<Long>();
+		 user= FriendEntity.getAllFriendsIDList(id);
+		
+			for(int i=0;i<user.size();i++){
+			String name=UserEntity.getUserName(user.get(i));
+			JSONObject object = new JSONObject();
+			object.put("name", name);
+			array.add(object);
+			//System.out.println("retJson:  "+array.toString());
+			}
+			
+		return array.toString();
+
+	}
+	
+	@POST
+	@Path("/ShowMessageService")
+	public String ShowMessageService(@FormParam("ID") long id) {
+		String name=UserEntity.getUserName(id);
+		String user= MessageEntity.getAllMessagesList(name);
+		
+		return user;
+
+	}
 
 }

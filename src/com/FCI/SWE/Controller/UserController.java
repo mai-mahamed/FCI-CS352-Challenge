@@ -24,11 +24,13 @@ import javax.ws.rs.core.Response;
 import org.glassfish.jersey.server.mvc.Viewable;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import com.FCI.SWE.Models.User;
 import com.FCI.SWE.ServicesModels.UserEntity;
+
 
 /**
  * This class contains REST services, also contains action function for web
@@ -91,6 +93,7 @@ public class UserController {
 		return Response.ok(new Viewable("/jsp/SendFriendRequest")).build();
 	}
 
+
 	
 	@POST
 	@Path("/SendFriendRequestService")
@@ -100,7 +103,7 @@ public class UserController {
 		String urlParameters = "Frienduname=" + fname+"&UID="+id ;
 
 		String retJson = Connection.connect(
-				"http://challengefci2015.appspot.com/rest/SendFriendRequestService", urlParameters,
+				"http://localhost:8888/rest/SendFriendRequestService", urlParameters,
 				"POST", "application/x-www-form-urlencoded;charset=UTF-8");
 
 		JSONParser parser = new JSONParser();
@@ -150,7 +153,7 @@ public class UserController {
 	public String response(@FormParam("uname") String uname,
 			@FormParam("email") String email, @FormParam("password") String pass) {
 
-		String serviceUrl = "http://challengefci2015.appspot.com/rest/RegistrationService";
+		String serviceUrl = "http://localhost:8888/rest/RegistrationService";
 		String urlParameters = "uname=" + uname + "&email=" + email
 				+ "&password=" + pass;
 		String retJson = Connection.connect(serviceUrl, urlParameters, "POST",
@@ -195,7 +198,7 @@ public class UserController {
 		String urlParameters = "uname=" + uname + "&password=" + pass;
 
 		String retJson = Connection.connect(
-				"http://challengefci2015.appspot.com/rest/LoginService", urlParameters,
+				"http://localhost:8888/rest/LoginService", urlParameters,
 				"POST", "application/x-www-form-urlencoded;charset=UTF-8");
 
 		JSONParser parser = new JSONParser();
@@ -233,7 +236,7 @@ public class UserController {
         
 		String urlParameters = "uname="+uname+"&ID="+id;
 		String retJson = Connection.connect(
-				"http://challengefci2015.appspot.com/rest/activeFriendRequests", urlParameters,
+				"http://localhost:8888/rest/activeFriendRequests", urlParameters,
 				"POST", "application/x-www-form-urlencoded;charset=UTF-8");
 		
 		return Response.ok(new Viewable("/jsp/active")).build();
@@ -278,5 +281,218 @@ public class UserController {
 		
 	}
 
+	@GET
+	@Path("/SendMessageToFriend")
+	public Response SendMessageTOFriend() {
+		return Response.ok(new Viewable("/jsp/SendMessage")).build();
+	}
+	
+	@POST
+	@Path("/SendMessage")
+	@Produces("text/html")
+	public Response SendMessage(@FormParam("FriendName") String fname , @FormParam("Message") String msg) {
+		String name=User.getCurrentActiveUser().getName();
+		String urlParameters = "FriendName=" + fname+"&UserName="+name+"&Message="+msg ;
+
+		String retJson = Connection.connect(
+				"http://localhost:8888/rest/SendFriendMessageService", urlParameters,
+				"POST", "application/x-www-form-urlencoded;charset=UTF-8");
+
+		JSONParser parser = new JSONParser();
+		Object obj;
+		try {
+			obj = parser.parse(retJson);
+			JSONObject object = (JSONObject) obj;
+			if (object.get("Status").equals("Failed"))
+				return null;
+			
+			return Response.ok(new Viewable("/jsp/SendMSG")).build();
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		/*
+		 * UserEntity user = new UserEntity(uname, email, pass);
+		 * user.saveUser(); return uname;
+		 */
+		return null;
+}
+	
+	
+	
+	////////////Show Messages From Different Friends////////////////// 
+@GET
+@Path("/ShowMessages")
+@Produces("text/html")
+public Response ShowMessage() {
+	long id=User.getCurrentActiveUser().getId();
+	
+	String urlParameters = "&ID="+id;
+	String retJson = Connection.connect(
+			"http://localhost:8888/rest/ShowMessageService", urlParameters,
+			"POST", "application/x-www-form-urlencoded;charset=UTF-8");
+	
+	  Object obj1=JSONValue.parse(retJson);
+	 
+	  JSONArray array=(JSONArray)obj1;
+     Map<String, Vector<String>> map = new HashMap<String, Vector<String>>();
+     Vector<String>requests= new Vector<String>();
+     JSONObject jsonObject;
+	for (int i=0;i<array.size();i++) {
+		  jsonObject=(JSONObject)array.get(i);
+	    
+		
+	 
+		 requests.add(jsonObject.toJSONString()); 
+		
+			 
+	}		
+		map.put("MessageList",requests);
+		return Response.ok(new Viewable("/jsp/ReceiveMessages",map)).build();
+}
+
+
+
+@GET
+@Path("/GroupChat")
+public Response GroupChat() {
+	return Response.ok(new Viewable("/jsp/GroupMessage")).build();
+}
+
+
+@POST
+@Path("/CreateGroupChat")
+@Produces("text/html")
+public Response CreateGroupChat(@FormParam("Name1") String name1 , @FormParam("Name2") String name2 , @FormParam("Name3") String name3 ,@FormParam("Name4") String name4 , @FormParam("Conversation") String conversation) {
+	String name=User.getCurrentActiveUser().getName();
+	String urlParameters = "Name=" + name+"&Name1=" + name1+"&Name2="+name2+"&Name3="+name3+"&Name4="+name4+"&Conversation="+conversation;
+	
+	String retJson = Connection.connect(
+			"http://localhost:8888/rest/CreateGroupChatService", urlParameters,
+			"POST", "application/x-www-form-urlencoded;charset=UTF-8");
+	JSONParser parser = new JSONParser();
+	Object obj;
+	try {
+		obj = parser.parse(retJson);
+		JSONObject object = (JSONObject) obj;
+		if (object.get("Status").equals("Failed"))
+		{ 	
+		return null;}
+		
+		return Response.ok(new Viewable("/jsp/SendMSG")).build();
+	} catch (ParseException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	/*
+	 * UserEntity user = new UserEntity(uname, email, pass);
+	 * user.saveUser(); return uname;
+	 */
+	return null;
+}
+
+
+@GET
+@Path("/SendGroupChat")
+public Response SendGroupChat() {
+	return Response.ok(new Viewable("/jsp/messageInGroup")).build();
+}
+
+
+@POST
+@Path("/SendToGroupChat")
+@Produces("text/html")
+public Response SendToGroupChat(@FormParam("Conversation_Name") String Conversation_Name , @FormParam("message") String msg) {
+	String name=User.getCurrentActiveUser().getName();
+	String urlParameters = "Name=" + name+"&Conversation_Name=" + Conversation_Name+"&message="+msg;
+	
+	String retJson = Connection.connect(
+			"http://localhost:8888/rest/SendToGroupChatService", urlParameters,
+			"POST", "application/x-www-form-urlencoded;charset=UTF-8");
+	JSONParser parser = new JSONParser();
+	Object obj;
+	try {
+		obj = parser.parse(retJson);
+		JSONObject object = (JSONObject) obj;
+		if (object.get("Status").equals("Failed"))
+		{ 	
+		return null;}
+		
+		return Response.ok(new Viewable("/jsp/SendMSG")).build();
+	} catch (ParseException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	/*
+	 * UserEntity user = new UserEntity(uname, email, pass);
+	 * user.saveUser(); return uname;
+	 */
+	return null;
+}
+
+@GET
+@Path("/ShowNotification")
+@Produces("text/html")
+public Response ShowNotification() {
+	long id=User.getCurrentActiveUser().getId();
+	
+	String urlParameters = "&ID="+id;
+	String retJson = Connection.connect(
+			"http://localhost:8888/rest/ShowNotificationService", urlParameters,
+			"POST", "application/x-www-form-urlencoded;charset=UTF-8");
+	
+	  Object obj1=JSONValue.parse(retJson);
+	  JSONArray array=(JSONArray)obj1;
+     Map<String, Vector<String>> map = new HashMap<String, Vector<String>>();
+     Vector<String>requests= new Vector<String>();
+	for (int i=0;i<array.size();i++) {
+		 JSONObject jsonObject=(JSONObject)array.get(i);
+	    
+		//System.out.println("retJson:  "+jsonObject.get("name").toString());
+	   requests.add(jsonObject.toJSONString());
+		
+			 
+	}		
+		map.put("FriendList",requests);
+		return Response.ok(new Viewable("/jsp/showNotify",map)).build();
+     //return Response.ok(new Viewable("/jsp/showNotify")).build();
+
 	
 }
+
+
+
+
+@GET
+@Path("/ShowGroupMessage")
+@Produces("text/html")
+public Response ShowGroupMessage() {
+	long id=User.getCurrentActiveUser().getId();
+	
+	String urlParameters = "&ID="+id;
+	String retJson = Connection.connect(
+			"http://localhost:8888/rest/ShowGroupMessageService", urlParameters,
+			"POST", "application/x-www-form-urlencoded;charset=UTF-8");
+	
+	  Object obj1=JSONValue.parse(retJson);
+	
+	  JSONArray array=(JSONArray)obj1;
+     Map<String, Vector<String>> map = new HashMap<String, Vector<String>>();
+     Vector<String>requests= new Vector<String>();
+	for (int i=0;i<array.size();i++) {
+		 JSONObject jsonObject=(JSONObject)array.get(i);
+	
+		System.out.println("retJson:  "+jsonObject.get("UserName").toString()+"  "+jsonObject.get("Conversation").toString()+"  "+jsonObject.get("Message").toString());
+	   requests.add(jsonObject.toJSONString());
+		
+			 
+	}		
+		map.put("FriendList",requests);
+		return Response.ok(new Viewable("/jsp/showGmsg",map)).build();
+	
+}
+
+
+
+}
+

@@ -10,7 +10,15 @@
 <form action="/social/SendFriendRequestService" method="post">
   Name : <input type="text" name="fname" /> <br>
   <input type="submit" value="Send">
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+  
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
   </form>
 </body>
 </html>

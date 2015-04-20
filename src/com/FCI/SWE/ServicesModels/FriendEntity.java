@@ -106,8 +106,22 @@ public class FriendEntity
 		
 		for (Entity entity : pq.asIterable()) {
 			
+<<<<<<< HEAD
 			if (entity.getProperty("FriendID").toString().equals(newID)&&
 					entity.getProperty("Status").toString().equals("Send")) {
+=======
+<<<<<<< HEAD
+			if (entity.getProperty("FriendID").toString().equals(newID)&&
+					entity.getProperty("Status").toString().equals("Send")) {
+=======
+<<<<<<< HEAD
+			if (entity.getProperty("FriendID").toString().equals(newID)&&
+					entity.getProperty("Status").toString().equals("Send")) {
+=======
+			if (entity.getProperty("FriendID").toString().equals(newID)) {
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
 				
 				FriendEntity returnedFriend=new FriendEntity((long)entity.getProperty("UserID"),
 						(long)entity.getProperty("FriendID"),entity.getProperty("Status").toString());
@@ -119,6 +133,13 @@ public class FriendEntity
 		return -1;
 	}
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
 	public static Vector<Long> getAllFriendsIDList(long id){
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -142,6 +163,14 @@ public class FriendEntity
 		return list;
 	}
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
 	public static void changeStatus(long fID,long curID){
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();

@@ -11,8 +11,6 @@
 <p> Welcome  ${it.name} want to be friend with you </p>
 <a href="/social/showActive">Accept</a> <br>
 
-<%
-out.println("hello");
-%>
+<a href="/social/home">Return to Home Page</a> <br> 
 </body>
 </html>

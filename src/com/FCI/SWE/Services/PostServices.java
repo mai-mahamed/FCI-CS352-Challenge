@@ -305,8 +305,12 @@ public class PostServices {
 		    object.put("UserName", list2.get(i).getUserName());
 		    object.put("Content", list2.get(i).getContent());
 		    object.put("Likes",list2.get(i).getLikes());
+<<<<<<< HEAD
 		    object.put("Privacy","private");
 		   
+=======
+		    object.put("Privacy",list1.get(i).getPrivacy());
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 			array.add(object);
 		
 	}
@@ -320,8 +324,12 @@ public class PostServices {
 		    object.put("UserName", list3.get(i).getUserName());
 		    object.put("Content", list3.get(i).getContent());
 		    object.put("Likes",list3.get(i).getLikes());
+<<<<<<< HEAD
 		    object.put("Privacy",list3.get(i).getPrivacy());
 		    object.put("WhoCanSee",list3.get(i).getWhoCanSee());
+=======
+		    object.put("Privacy",list1.get(i).getPrivacy());
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 			array.add(object);
 		
 	}
@@ -348,14 +356,20 @@ public class PostServices {
 				PublicSharedPostEntity p=new PublicSharedPostEntity(object.get("UserName").toString(),object.get("Content").toString()
 					, pr,object.get("Likes").toString(),name);
 				p.save();
+<<<<<<< HEAD
 				return "done";
+=======
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 			}
 			else if((pr.toLowerCase()).contains("private"))
 			{
 				privateSharedPostEntity p=new privateSharedPostEntity(object.get("UserName").toString(),object.get("Content").toString()
 					, pr,object.get("Likes").toString(),name);
 				p.save();
+<<<<<<< HEAD
 				return "done";
+=======
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 			}
 			else if((pr.toLowerCase()).contains("custom"))
 			{
@@ -363,13 +377,20 @@ public class PostServices {
 				CustomSharedPostEntity p=new CustomSharedPostEntity(object.get("UserName").toString(),object.get("Content").toString()
 						, pr,object.get("Likes").toString(),name,whoSee);
 				JSONObject json = new JSONObject();
+<<<<<<< HEAD
 				return "done";
+=======
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 				
 			}
 		}
 		else if((Content.toLowerCase()).contains("private"))
 		{
+<<<<<<< HEAD
 			
+=======
+			System.out.println("prsfjgoitdjhoibfoihbjfoijfgoijnfogijnoifgjnoij");
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 				 if((pr.toLowerCase()).contains("custom"))
 					{
 						String whoSee=(pr.toLowerCase()).replace("custom","");
@@ -377,13 +398,17 @@ public class PostServices {
 								, pr,object.get("Likes").toString(),name,whoSee);
 						JSONObject json = new JSONObject();
 						p.save();
+<<<<<<< HEAD
 						return "done";
+=======
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 					}
 				 else{
 				PrivateOwnerSharedPostEntity p=new PrivateOwnerSharedPostEntity(object.get("UserName").toString(),object.get("Content").toString()
 					, pr,object.get("Likes").toString(),name);
 				System.out.println("pr");
 				p.save();
+<<<<<<< HEAD
 				return "done";
 				 }
 			
@@ -426,6 +451,22 @@ public class PostServices {
 			return "done";
 			 }
 		}
+=======
+				 }
+			
+		}
+	/*	else if((Privacy.toLowerCase()).contains("custom"))
+		{
+			String whoSee=(Privacy.toLowerCase()).replace("custom","");
+			PostPrivacy p=new CustomTimelinePost(name,Content,Feeling,"Custom",whoSee,owner,HashTag);
+			JSONObject json = new JSONObject();
+			if(PostBuilder.perparePost(p))
+				json.put("Status", "OK");
+			else
+				json.put("Status", "Failed");
+			return json.toJSONString();
+		}*/
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 		return null;
 		
 	}

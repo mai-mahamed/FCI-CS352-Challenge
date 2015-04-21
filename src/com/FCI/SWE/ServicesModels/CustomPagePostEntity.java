@@ -112,6 +112,7 @@ public class CustomPagePostEntity {
 		PreparedQuery pq = datastore.prepare(gaeQuery);
 		for (Entity entity : pq.asIterable()) {
 			System.out.println(entity.getProperty("WhoCanSee").toString());
+<<<<<<< HEAD
 			String a=PageEntity.get(pname);
 			if(entity.getProperty("WhoCanSee").toString().contains(uname)||a.equals(uname))
 			{
@@ -138,6 +139,18 @@ public class CustomPagePostEntity {
 				
 						
 				
+=======
+			if(entity.getProperty("WhoCanSee").toString().contains(uname))
+			{
+				long key=entity.getKey().getId();
+						
+				CustomPagePostEntity p=new CustomPagePostEntity(entity.getProperty("UserName").toString(),entity.getProperty("Content").toString()
+						,entity.getProperty("Privacy").toString()
+						,Integer.parseInt(entity.getProperty("Likes").toString())
+						,entity.getProperty("PageName").toString(),1);	
+				increaseSeen(key);
+				list.add(p);
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 				
 				
 			   }
@@ -172,7 +185,11 @@ public class CustomPagePostEntity {
 				group.setProperty("Privacy", p.getPrivacy());
 				group.setProperty("PageName", p.getPageName());
 				group.setProperty("PostSeen", (p.getSeen()+1));
+<<<<<<< HEAD
 				group.setProperty("WhoCanSee", (p.getSeen()+1));
+=======
+				
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 				datastore.put(group);
 				
 			}

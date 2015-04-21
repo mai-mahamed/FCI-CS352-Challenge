@@ -107,7 +107,11 @@ public class PageController {
 	@POST
 	@Path("/ShowPageTime")
 	@Produces("text/html")
+<<<<<<< HEAD
 	public Response ShowPageTime(@FormParam("PageName") String PageName) {
+=======
+	public Response CreatePageTime(@FormParam("PageName") String PageName) {
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
        
 		String serviceUrl = "http://localhost:8888/rest/ShowPageTimeService";
 		String name=User.getCurrentActiveUser().getName();

@@ -8,6 +8,18 @@
 </head>
 <body>
 <p> Message is sent. </p>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<a href="/social/home">Return to Home Page</a> <br> 
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 </body>
 </html>

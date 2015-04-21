@@ -121,8 +121,13 @@ public class PublicPagePostEntity {
 			if(entity.getProperty("PageName").toString().equals(conversation_Name))
 			{
 				long key=entity.getKey().getId();
+<<<<<<< HEAD
 				String a=PageEntity.get(conversation_Name);
 				if(a.equals(name)){
+=======
+				PageEntity a=PageEntity.get(conversation_Name);
+				if(a.getUname()==name){
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 					PublicPagePostEntity p=new PublicPagePostEntity(entity.getProperty("UserName").toString(),entity.getProperty("Content").toString()
 							,entity.getProperty("Privacy").toString()
 							,Integer.parseInt(entity.getProperty("Likes").toString())

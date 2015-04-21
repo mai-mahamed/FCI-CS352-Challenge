@@ -11,6 +11,24 @@
 <p> Welcome  ${it.name} want to be friend with you </p>
 <a href="/social/showActive">Accept</a> <br>
 
+<<<<<<< HEAD
 <a href="/social/home">Return to Home Page</a> <br> 
+=======
+<<<<<<< HEAD
+<a href="/social/home">Return to Home Page</a> <br> 
+=======
+<<<<<<< HEAD
+<a href="/social/home">Return to Home Page</a> <br> 
+=======
+<<<<<<< HEAD
+<a href="/social/home">Return to Home Page</a> <br> 
+=======
+<%
+out.println("hello");
+%>
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 </body>
 </html>

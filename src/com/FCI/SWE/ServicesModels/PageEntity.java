@@ -86,7 +86,11 @@ public class PageEntity {
 			return true;
 		else return false;
 	}
+<<<<<<< HEAD
 	public static String get(String pname2) {
+=======
+	public static PageEntity get(String pname2) {
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 		// TODO Auto-generated method stub
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -99,7 +103,12 @@ public class PageEntity {
 			
 			if (entity.getProperty("Pagename").toString().equals(pname2)) {
 				
+<<<<<<< HEAD
 				String returnedFriend=entity.getProperty("Username").toString();
+=======
+				PageEntity returnedFriend=new PageEntity(entity.getProperty("Pagename").toString(),
+						entity.getProperty("Type").toString(),entity.getProperty("Category").toString(),entity.getProperty("Username").toString());
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 				
 				
 				return returnedFriend;

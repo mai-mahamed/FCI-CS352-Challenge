@@ -97,7 +97,11 @@ public class PageServices {
 	}
 		
 		if(LikesEntity.checkaccess(pname,uname)){
+<<<<<<< HEAD
 			Vector<PrivatePagePostEntity> list2=PrivatePagePostEntity.check(pname,uname);
+=======
+			Vector<PrivatePagePostEntity> list2=PrivatePagePostEntity.check(pname);
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 		
 	for(int i=0;i<list2.size();i++){
 			
@@ -105,7 +109,10 @@ public class PageServices {
 		    object.put("UserName", list2.get(i).getUserName());
 		    object.put("Content", list2.get(i).getContent());
 		    object.put("Likes",list2.get(i).getLikes());
+<<<<<<< HEAD
 		    object.put("PostSeen",list2.get(i).getSeen());
+=======
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 			array.add(object);
 		
 	}
@@ -119,7 +126,10 @@ public class PageServices {
 		    object.put("UserName", list3.get(i).getUserName());
 		    object.put("Content", list3.get(i).getContent());
 		    object.put("Likes",list3.get(i).getLikes());
+<<<<<<< HEAD
 		    object.put("PostSeen",list3.get(i).getSeen());
+=======
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
 			array.add(object);
 		
 	}

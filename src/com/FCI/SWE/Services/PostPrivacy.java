@@ -124,6 +124,7 @@ public abstract class PostPrivacy {
 
 
 
+<<<<<<< HEAD
 /**
  *@param content : content in any post
  * @param feeling : feeling in any post
@@ -133,6 +134,9 @@ public abstract class PostPrivacy {
  * @param owner : timeline owner 
  * @param hashTag : hashtag of the post 
  */
+=======
+
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
 	public PostPrivacy(String userName, String content, String feeling,
 			String privacy, String owner, String hashTag) {
 		super();
@@ -149,7 +153,11 @@ public abstract class PostPrivacy {
 
 
 
+<<<<<<< HEAD
 	public abstract boolean save(); // abstract function
+=======
+	public abstract boolean save();
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
 	
 	
 

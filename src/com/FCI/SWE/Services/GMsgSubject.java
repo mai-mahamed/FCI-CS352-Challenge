@@ -9,6 +9,7 @@ import com.FCI.SWE.ServicesModels.MessagesGroupMessageEntity;
 
 public class GMsgSubject {
 	private Vector<Observers>members;
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param name : member in conversation
@@ -18,6 +19,9 @@ public class GMsgSubject {
 	 * @param name4 : member in conversation
 	 * @param conversation : name of  conversation
 	 */
+=======
+	
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
 	public void addNewConversation(String name, String name1, String name2,
 			String name3, String name4, String conversation) {
 	
@@ -38,9 +42,13 @@ public class GMsgSubject {
 	 
 	  
 	}
+<<<<<<< HEAD
 /**
  * notify all members
  */
+=======
+
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
 	public void notifyObservers() {
 	   for(int i=0;i<members.size();i++)
 	   {
@@ -48,12 +56,16 @@ public class GMsgSubject {
 	   }
 		
 	}
+<<<<<<< HEAD
 /**
  * add new message to conversation
  * @param conversation_Name : name of conversation
  * @param msg : the message 
  * @param name : user name
  */
+=======
+
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
 	public void addNewMsg(String conversation_Name, String msg, String name) {
 		// TODO Auto-generated method stub
 		MessagesGroupMessageEntity group= new MessagesGroupMessageEntity(name,msg,conversation_Name);
@@ -64,10 +76,14 @@ public class GMsgSubject {
 	    
 		
 	}
+<<<<<<< HEAD
 /**
  * function get all members in conversation
  * @param Cname : conversation name
  */
+=======
+
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
 	public void getMembers(String Cname) {
 		// TODO Auto-generated method stub
 		GroupMessageEntity group=GroupMessageEntity.getgroup(Cname);

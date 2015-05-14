@@ -3,6 +3,7 @@ package com.FCI.SWE.Services;
 import com.FCI.SWE.ServicesModels.CustomPagePostEntity;
 import com.FCI.SWE.ServicesModels.PrivatePagePostEntity;
 import com.FCI.SWE.ServicesModels.PrivateTimelinePostEntity;
+<<<<<<< HEAD
 /**
  * class to define Custom Page Post
  * @author Nabila
@@ -18,6 +19,11 @@ private String Who_see;
  * @param Who_see : users who can see post
  * @param PageName : page name
  */
+=======
+
+public class CustomPagePost extends PagePostPrivacy {
+private String Who_see;
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
 	public CustomPagePost(String userName, String content,
 			String privacy,String Who_see,String PageName) {
 		super(userName, content, privacy,PageName);
@@ -34,9 +40,12 @@ private String Who_see;
 	}
 
 	@Override
+<<<<<<< HEAD
 	/**
 	 * function to call save record in entity
 	 */
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
 	public boolean save() {
 		// TODO Auto-generated method stub
 		boolean found=CustomPagePostEntity.save(this);

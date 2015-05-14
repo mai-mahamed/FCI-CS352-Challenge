@@ -21,9 +21,12 @@ public class CustomTimelinePost extends PostPrivacy {
 	}
 
 	@Override
+<<<<<<< HEAD
 	/**
 	 * function to call save record in entity
 	 */
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
 	public boolean save() {
 		// TODO Auto-generated method stub
 		boolean found=CustomTimelinePostEntity.save(this);

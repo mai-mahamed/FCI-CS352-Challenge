@@ -13,6 +13,7 @@
  <p>To make sure please enter Friend </p>
  Name : <input type="text" name="uname" /> <br>
  <input type="submit" value="Accept">
+
 </form>
 </body>
 </html>

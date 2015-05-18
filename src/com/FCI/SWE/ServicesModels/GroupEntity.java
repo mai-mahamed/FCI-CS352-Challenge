@@ -47,6 +47,9 @@ public class GroupEntity {
 		this.ownerId = id;
 	}
 	
+	
+
+
 	public Boolean saveGroup() {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();

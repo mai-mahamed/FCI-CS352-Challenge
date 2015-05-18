@@ -106,7 +106,8 @@ public class FriendEntity
 		
 		for (Entity entity : pq.asIterable()) {
 			
-			if (entity.getProperty("FriendID").toString().equals(newID)) {
+			if (entity.getProperty("FriendID").toString().equals(newID)&&
+					entity.getProperty("Status").toString().equals("Send")) {
 				
 				FriendEntity returnedFriend=new FriendEntity((long)entity.getProperty("UserID"),
 						(long)entity.getProperty("FriendID"),entity.getProperty("Status").toString());
@@ -118,7 +119,30 @@ public class FriendEntity
 		return -1;
 	}
 	
-	public static void changeStatus(long fID,long curID){
+	public static Vector<Long> getAllFriendsIDList(long id){
+		DatastoreService datastore = DatastoreServiceFactory
+				.getDatastoreService();
+		
+		Query gaeQuery = new Query("FriendsStatus");
+		PreparedQuery pq = datastore.prepare(gaeQuery);
+		Vector<Long> list=new Vector<Long>();
+		String newID=String.valueOf(id);
+		
+		for (Entity entity : pq.asIterable()) {
+			
+			if (entity.getProperty("FriendID").toString().equals(newID)) {
+				
+				FriendEntity returnedFriend=new FriendEntity((long)entity.getProperty("UserID"),
+						(long)entity.getProperty("FriendID"),entity.getProperty("Status").toString());
+				
+				list.add(returnedFriend.getUID());
+				
+			}
+		}
+		return list;
+	}
+	
+	public static boolean changeStatus(long fID,long curID){
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
 		
@@ -142,13 +166,40 @@ public class FriendEntity
 				employee.setProperty("Status", "Active");
 				
 				datastore.put(employee);
+				return true;
 				
 			}
 		
+			
+			
+			
 	}
+		return false;
 	
 	}
 	
+	
+	public static boolean Check(long fID,long curID){
+		DatastoreService datastore = DatastoreServiceFactory
+				.getDatastoreService();
+		
+		Query gaeQuery = new Query("FriendsStatus");
+		PreparedQuery pq = datastore.prepare(gaeQuery);
+		List<Entity> list = pq.asList(FetchOptions.Builder.withDefaults());
+
+		
+		String newID=String.valueOf(curID);
+		String newID2=String.valueOf(fID);
+		for (Entity entity : pq.asIterable()) {
+			
+			if (entity.getProperty("FriendID").toString().equals(newID)&&entity.getProperty("UserID").toString().equals(newID2)&&entity.getProperty("Status").toString().equals("Active")) {
+				
+				return true;
+			}
+     }
+	return false;	
+
+}
 	
 }
 

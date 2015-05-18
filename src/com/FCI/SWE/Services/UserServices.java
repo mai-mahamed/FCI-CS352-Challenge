@@ -22,14 +22,16 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.glassfish.jersey.server.mvc.Viewable;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import com.FCI.SWE.Models.User;
 import com.FCI.SWE.ServicesModels.FriendEntity;
+import com.FCI.SWE.ServicesModels.GroupMessageEntity;
+import com.FCI.SWE.ServicesModels.MessageEntity;
 import com.FCI.SWE.ServicesModels.UserEntity;
-
 /**
  * This class contains REST services, also contains action function for web
  * application
@@ -73,7 +75,12 @@ public class UserServices {
 		object.put("Status", "OK");
 		return object.toString();
 	}
-	
+	/**
+	 * 
+	 * @param uname : friend name that user want to accept  his  request
+	 * @param currID : user id
+	 * @return done or not
+	 */
 	@POST
 	@Path("/activeFriendRequests")
 	public String activeFriendRequests(@FormParam("uname") String uname, @FormParam("ID")long currID) {
@@ -112,7 +119,14 @@ public class UserServices {
 
 	}
 
+
 	///////////////////////////////////////////////////////////////
+	/**
+	 * 
+	 * @param uname : friend name that user want to send  him  request
+	 * @param currID : user id
+	 * @return done or not
+	 */
 	@POST
 	@Path("/SendFriendRequestService")
 	public String Send_Friend_Request(@FormParam("Frienduname") String Funame,@FormParam("UID")long id)
@@ -133,7 +147,11 @@ public class UserServices {
 		return object2.toString();
 		
 	}
-	
+	/**
+	 * function for Show Friend Requests
+	 * @param id : user id
+	 * @return done or not
+	 */
 	
 	@POST
 	@Path("/ShowFriendRequests")
@@ -157,7 +175,129 @@ public class UserServices {
 
 	}
 	
+
+	/**
+	 *function for Send Friend Message Service
+	 * @param uname : friend name
+	 * @param msg : message
+	 * @param Currentuser : name of Current user
+	 * @return done or not
+	 */
+
+	@POST
+	@Path("/SendFriendMessageService")
+	public String SendFriendMessageService(@FormParam("FriendName") String uname,@FormParam("Message")String msg, @FormParam("UserName") String Currentuser)
+	{
+		JSONObject object2 = new JSONObject();
+		MessageEntity fuser=new MessageEntity(Currentuser,uname,msg);
+		fuser.saveFriendUser();
+		    object2.put("Status","OK");
+
+		return object2.toString();
+		
+	}
+
 	
 
+	
+	/**
+	 * 
+	 * @param id : user id
+	 * @return user
+	 */
+	
+	@POST
+	@Path("/ShowMessageService")
+	public String ShowMessageService(@FormParam("ID") long id) {
+		Command c=new SingleMSGCommand();
+		String user=c.exec(id);
+		
+		return user;
 
+	}
+	/**
+	 * 
+	* @param name : member in conversation
+	 * @param name1 : member in conversation
+	 * @param name2 : member in conversation
+	 * @param name3 : member in conversation
+	 * @param name4 : member in conversation
+	 * @param conversation : name of  conversation
+	 * @return done or not
+	 */
+	
+	@POST
+	@Path("/CreateGroupChatService")
+	public String CreateGroupChatService(@FormParam("Name") String name ,@FormParam("Name1") String name1 , @FormParam("Name2") String name2 , @FormParam("Name3") String name3 ,@FormParam("Name4") String name4 , @FormParam("Conversation") String conversation)
+	{
+		JSONObject object2 = new JSONObject();
+		
+		GMsgSubject s=new GMsgSubject();
+		s.addNewConversation(name ,name1 ,name2 ,name3 ,name4 ,conversation);
+		
+		    object2.put("Status","OK");
+
+		return object2.toString();
+		
+	}
+/**
+ * 
+ * add new message to conversation
+ * @param conversation_Name : name of conversation
+ * @param msg : the message 
+ * @param name : user name
+ * @return done or not
+ */
+	
+	@POST
+	@Path("/SendToGroupChatService")
+	public String SendToGroupChatService(@FormParam("Name")String name,@FormParam("Conversation_Name") String Conversation_Name , @FormParam("message") String msg)
+	{
+		
+		JSONObject object2 = new JSONObject();
+		boolean found=GroupMessageEntity.check(name,Conversation_Name);
+		if(found){
+		
+		GMsgSubject s=new GMsgSubject();
+		s.addNewMsg(Conversation_Name,msg,name);
+		
+		    object2.put("Status","OK");}
+		else{
+			
+			object2.put("Status","Failed");}
+
+		return object2.toString();
+		
+	}
+	/**
+	 * 
+	 * @param id : user id 
+	 * @return all friend requests send to user
+	 */
+	@POST
+	@Path("/ShowNotificationService")
+	public String ShowNotificationService(@FormParam("ID") long id) {
+		
+		Command c=new FriendRequestCommand();
+		String array=c.exec(id);
+			
+		return array;
+
+	}
+	/**
+	 * 
+	 * @param id : user id
+	 * @return all group messages 
+	 */
+	@POST
+	@Path("/ShowGroupMessageService")
+	public String ShowGroupMessageService(@FormParam("ID") long id) {
+		
+		Command c=new GMessageCommand();
+		String array=c.exec(id);
+		
+
+		return array;
+
+	}
 }

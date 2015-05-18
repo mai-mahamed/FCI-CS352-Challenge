@@ -1,5 +1,6 @@
 package FrontendTesting;
 
+<<<<<<< HEAD
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
@@ -225,3 +226,8 @@ public class PostControllerTesting {
 			
 		}
 }
+=======
+public class PostControllerTesting {
+
+}
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd

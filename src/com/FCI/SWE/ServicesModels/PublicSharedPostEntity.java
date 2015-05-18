@@ -46,10 +46,15 @@ public  boolean save() {
 		group.setProperty("Privacy", this.Privacy);
 		if(datastore.put(group).isComplete())
 			{
+<<<<<<< HEAD
 			return true;
 			}
 		else 
 			return false;
+=======
+			return true;}
+		else return false;
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	}
 
 	

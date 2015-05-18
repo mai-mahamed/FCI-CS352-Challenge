@@ -9,6 +9,10 @@ import com.FCI.SWE.ServicesModels.MessagesGroupMessageEntity;
 
 public class GMsgSubject {
 	private Vector<Observers>members;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * 
 	 * @param name : member in conversation
@@ -18,6 +22,12 @@ public class GMsgSubject {
 	 * @param name4 : member in conversation
 	 * @param conversation : name of  conversation
 	 */
+<<<<<<< HEAD
+=======
+=======
+	
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	public void addNewConversation(String name, String name1, String name2,
 			String name3, String name4, String conversation) {
 	
@@ -38,9 +48,19 @@ public class GMsgSubject {
 	 
 	  
 	}
+<<<<<<< HEAD
 /**
  * notify all members
  */
+=======
+<<<<<<< HEAD
+/**
+ * notify all members
+ */
+=======
+
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	public void notifyObservers() {
 	   for(int i=0;i<members.size();i++)
 	   {
@@ -48,12 +68,22 @@ public class GMsgSubject {
 	   }
 		
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 /**
  * add new message to conversation
  * @param conversation_Name : name of conversation
  * @param msg : the message 
  * @param name : user name
  */
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	public void addNewMsg(String conversation_Name, String msg, String name) {
 		// TODO Auto-generated method stub
 		MessagesGroupMessageEntity group= new MessagesGroupMessageEntity(name,msg,conversation_Name);
@@ -64,10 +94,20 @@ public class GMsgSubject {
 	    
 		
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 /**
  * function get all members in conversation
  * @param Cname : conversation name
  */
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	public void getMembers(String Cname) {
 		// TODO Auto-generated method stub
 		GroupMessageEntity group=GroupMessageEntity.getgroup(Cname);

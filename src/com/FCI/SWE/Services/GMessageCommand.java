@@ -13,22 +13,47 @@ import com.FCI.SWE.ServicesModels.UserEntity;
 public class GMessageCommand implements Command{
 
 	@Override
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * function get all conversations' messages that login user was joined 
 	 * @return list with  all conversations' messages that login user was joined 
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	public String exec(long id) {
 		JSONArray array=new JSONArray();
 		String name=UserEntity.getUserName(id);
 		Vector<String> user= new Vector<String>();
 		
 
+<<<<<<< HEAD
 		 user= GroupMessageEntity.getAllFriendsConvList(name);// get all conversations name
+=======
+<<<<<<< HEAD
+		 user= GroupMessageEntity.getAllFriendsConvList(name);// get all conversations name
+=======
+		 user= GroupMessageEntity.getAllFriendsConvList(name);
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 		
 			for(int i=0;i<user.size();i++){
 				Vector<MessagesGroupMessageEntity> l= new Vector<MessagesGroupMessageEntity>();
 				
+<<<<<<< HEAD
 				l=MessagesGroupMessageEntity.check(user.get(i)); // return all messages for this conversation
+=======
+<<<<<<< HEAD
+				l=MessagesGroupMessageEntity.check(user.get(i)); // return all messages for this conversation
+=======
+				l=MessagesGroupMessageEntity.check(user.get(i));
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 				
 				JSONObject object = new JSONObject();
 				for(int j=0;j<l.size();j++)

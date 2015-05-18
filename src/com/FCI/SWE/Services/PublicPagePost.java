@@ -13,9 +13,18 @@ public class PublicPagePost extends PagePostPrivacy {
 	}
 
 	@Override
+<<<<<<< HEAD
 	/**
 	 * function save post in entity
 	 */
+=======
+<<<<<<< HEAD
+	/**
+	 * function save post in entity
+	 */
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	public boolean save() {
 		// TODO Auto-generated method stub
 		boolean found=PublicPagePostEntity.save(this);

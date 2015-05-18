@@ -106,7 +106,19 @@ public class PrivatePagePostEntity {
 
 	}
 
+<<<<<<< HEAD
 	public static Vector<PrivatePagePostEntity> check(String pname,String name) {
+=======
+<<<<<<< HEAD
+	public static Vector<PrivatePagePostEntity> check(String pname,String name) {
+=======
+<<<<<<< HEAD
+	public static Vector<PrivatePagePostEntity> check(String pname,String name) {
+=======
+	public static Vector<PrivatePagePostEntity> check(String pname) {
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 		// TODO Auto-generated method stub
 		
 			Vector<PrivatePagePostEntity> list = new Vector<PrivatePagePostEntity>();
@@ -116,6 +128,13 @@ public class PrivatePagePostEntity {
 			Query gaeQuery = new Query("PrivatePagePostEntity");
 			PreparedQuery pq = datastore.prepare(gaeQuery);
 			for (Entity entity : pq.asIterable()) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 				String a=PageEntity.get(pname);
 				if(entity.getProperty("PageName").toString().equals(pname))
 				{
@@ -143,10 +162,37 @@ public class PrivatePagePostEntity {
 					
 				   
 			}
+<<<<<<< HEAD
 		
 		return list;
 	}
 	public static boolean increaseSeen(long ID){
+=======
+<<<<<<< HEAD
+=======
+=======
+				
+				if(entity.getProperty("PageName").toString().equals(pname))
+				{
+				
+					long key=entity.getKey().getId();		
+					PrivatePagePostEntity p=new PrivatePagePostEntity(entity.getProperty("UserName").toString(),entity.getProperty("Content").toString()
+							,entity.getProperty("Privacy").toString()
+							,Integer.parseInt(entity.getProperty("Likes").toString())
+							,entity.getProperty("PageName").toString(),1);	
+					increaseSeen(key);
+					list.add(p);
+					
+					
+				   }
+				}
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+		
+		return list;
+	}
+	public static void increaseSeen(long ID){
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
 		
@@ -171,11 +217,18 @@ public class PrivatePagePostEntity {
 				group.setProperty("PostSeen", (p.getSeen()+1));
 				
 				datastore.put(group);
+<<<<<<< HEAD
 				return true;
 			}
 	
 		}
 		return false ;
+=======
+				
+			}
+	
+		}
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 
 
 	}

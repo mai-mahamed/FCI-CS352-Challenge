@@ -90,12 +90,22 @@ public abstract class PagePostPrivacy {
 
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 /**
  * @param userName : user name
  * @param content : content of any post
  * @param privacy : showing the privacy of post(custom)
  * @param pageName : page name
  */
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	public PagePostPrivacy(String userName, String content,
 			String privacy, String pageName) {
 		
@@ -126,7 +136,15 @@ public abstract class PagePostPrivacy {
 
 
 
+<<<<<<< HEAD
 	public abstract boolean save(); // abstract function
+=======
+<<<<<<< HEAD
+	public abstract boolean save(); // abstract function
+=======
+	public abstract boolean save();
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	
 	
 

@@ -25,25 +25,48 @@ import com.FCI.SWE.Models.User;
 @Produces("text/html")
 
 public class PageController {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 /**
  * 
  * @return   jsp that calling the form for creating page
  */
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@GET
 	@Path("/Page")
 	public Response index() {
 		return Response.ok(new Viewable("/jsp/PageForm")).build();
 	}
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * 
 	 * @return jsp that creating page
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@GET
 	@Path("/CreatePageForm")
 	public Response CreatePageForm() {
 		return Response.ok(new Viewable("/jsp/CreatePageForm")).build();
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * 
 	 * @param pname : page name
@@ -51,6 +74,12 @@ public class PageController {
 	 * @param category : category of page like (Education,Science,...etc)
 	 * @return send to user creating page was successfully
 	 */
+<<<<<<< HEAD
+=======
+=======
+	
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@POST
 	@Path("/CreatePage")
 	@Produces(MediaType.TEXT_PLAIN)
@@ -78,15 +107,28 @@ public class PageController {
 		return null;
 	}
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * 
 	 * @return calling the jsp that creating page post in page
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@GET
 	@Path("/CreatePagePostForm")
 	public Response FriendTimeline() {
 		return Response.ok(new Viewable("/jsp/pagePost")).build();
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	
 	/**
 	 * 
@@ -95,6 +137,11 @@ public class PageController {
 	 * @param PageName : name of page
 	 * @return send to user posting in page was successfully
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@POST
 	@Path("/CreatePagePost")
 	@Produces(MediaType.TEXT_PLAIN)
@@ -123,15 +170,29 @@ public class PageController {
 	}
 	
 /////////////PageName//////////////////////////
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * 
 	 * @return calling jsp that showing page's time line
 	 */
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@GET
 	@Path("/ShowPageTimeForm")
 	public Response PageTimeline() {
 		return Response.ok(new Viewable("/jsp/PageTime")).build();
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	
 	/**
 	 * 
@@ -142,6 +203,19 @@ public class PageController {
 	@Path("/ShowPageTime")
 	@Produces("text/html")
 	public Response ShowPageTime(@FormParam("PageName") String PageName) {
+<<<<<<< HEAD
+=======
+=======
+	@POST
+	@Path("/ShowPageTime")
+	@Produces("text/html")
+<<<<<<< HEAD
+	public Response ShowPageTime(@FormParam("PageName") String PageName) {
+=======
+	public Response CreatePageTime(@FormParam("PageName") String PageName) {
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
        
 		String serviceUrl = "http://localhost:8888/rest/ShowPageTimeService";
 		String name=User.getCurrentActiveUser().getName();
@@ -171,21 +245,39 @@ public class PageController {
 	}
 	
 ///////////////////////////////////End//////////////////////	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * 
 	 * @return calling jsp that caling form for liking page
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@GET
 	@Path("/LikePageForm")
 	public Response LikePageForm() {
 		return Response.ok(new Viewable("/jsp/LikePageForm")).build();
 	}
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * 
 	 * @param pname : name of the page
 	 * @return showing that the page is liked for the user
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@POST
 	@Path("/LikePage")
 	@Produces(MediaType.TEXT_PLAIN)

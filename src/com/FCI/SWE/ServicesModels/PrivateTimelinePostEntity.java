@@ -194,10 +194,28 @@ public class PrivateTimelinePostEntity {
 								
 						PrivateTimelinePostEntity returnedFriend=new PrivateTimelinePostEntity(entity.getProperty("UserName").toString(),
 								entity.getProperty("Content").toString(),entity.getProperty("Feeling").toString(),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 								"private",entity.getProperty("Timeline'sOwner").toString(),Integer.parseInt(entity.getProperty("Likes").toString()),
 								entity.getProperty("Hashtags").toString());
 						returnedFriend.setPrivacy("private");
 						 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+								entity.getProperty("Privacy").toString(),entity.getProperty("Timeline'sOwner").toString(),Integer.parseInt(entity.getProperty("Likes").toString()),
+								entity.getProperty("Hashtags").toString());
+						
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 						list.add(returnedFriend);
 						
 						

@@ -46,35 +46,66 @@ import com.FCI.SWE.ServicesModels.UserEntity;
 
 
 public class PostController {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * 
 	 * @return calling jsp that creating post in my time lime , friend time line or showing hash tag trends
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@GET
 	@Path("/Post")
 	public Response index() {
 		return Response.ok(new Viewable("/jsp/createPostForm1")).build();
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	
 	/**
 	 * 
 	 * @return calling jsp that creating post in my time line
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@GET
 	@Path("/MyTimeline")
 	public Response MyTimeline() {
 		return Response.ok(new Viewable("/jsp/MyTimeline")).build();
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	
 	/**
 	 * 
 	 * @return calling jsp that creating post in my friend time line
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@GET
 	@Path("/FriendTimeline")
 	public Response FriendTimeline() {
 		return Response.ok(new Viewable("/jsp/FriendTimeline")).build();
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	
 	/**
 	 * 
@@ -83,6 +114,11 @@ public class PostController {
 	 * @param Privacy : showing the privacy of post(public,custom)
 	 * @return creating post in my time line
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@POST
 	@Path("/CreateMyTimelinePost")
 	@Produces(MediaType.TEXT_PLAIN)
@@ -123,6 +159,10 @@ public class PostController {
 
 		return null;
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	
 	/**
 	 * 
@@ -132,6 +172,11 @@ public class PostController {
 	 * @param owner : owner of time line
 	 * @return  creating post in my friend time line
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@POST
 	@Path("/CreateFriendTimelinePost")
 	@Produces(MediaType.TEXT_PLAIN)
@@ -175,21 +220,41 @@ public class PostController {
 		return null;
 	}
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * 
 	 * @return calling jsp that showing hash tag in any time line
 	 */
+<<<<<<< HEAD
+=======
+=======
+	
+	
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@GET
 	@Path("/HashtagTimeline")
 	public Response HashtagTimeline() {
 		return Response.ok(new Viewable("/jsp/HashtagTimeline")).build();
 	}
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * 
 	 * @param Hashtag : user can write hash tag form
 	 * @return all posts that has hash tags
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@POST
 	@Path("/ShowHashtagTimeline")
 	@Produces("text/html")
@@ -220,10 +285,19 @@ public class PostController {
 			return Response.ok(new Viewable("/jsp/showHashtag",map)).build();
 	}
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * 
 	 * @return all counts of one hash tag 
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@GET
 	@Path("/HashtagTrends")
 	@Produces("text/html")
@@ -257,10 +331,20 @@ public class PostController {
 		
 	}
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * 
 	 * @return showing all posts that user post it in his/her time line 
 	 */
+<<<<<<< HEAD
+=======
+=======
+	
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@GET
 	@Path("/ShowUserTime")
 	@Produces("text/html")
@@ -294,12 +378,22 @@ public class PostController {
 			return Response.ok(new Viewable("/jsp/ShowUserTime",map)).build();
 	}
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * 
 	 * @param uname : user name
 	 * @param pr : showing the privacy of post(public,custom,private)
 	 * @return sharing the posts
 	 */
+<<<<<<< HEAD
+=======
+=======
+	
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@POST
 	@Path("/sharePost")
 	@Produces("text/html")

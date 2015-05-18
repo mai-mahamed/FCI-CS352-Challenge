@@ -26,7 +26,27 @@ public class GroupMessageEntity {
 	private String name3;
 	private String name4; 
 	private String conversation;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+	private String message;
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	
 	/**
 	 * Constructor accepts user data
@@ -36,7 +56,27 @@ public class GroupMessageEntity {
 	 * @param FuID
 	 *           friend user id
 	 */
+<<<<<<< HEAD
 	public GroupMessageEntity(String uname, String name1,String name2,String name3,String name4,String conversation)
+=======
+<<<<<<< HEAD
+	public GroupMessageEntity(String uname, String name1,String name2,String name3,String name4,String conversation)
+=======
+<<<<<<< HEAD
+	public GroupMessageEntity(String uname, String name1,String name2,String name3,String name4,String conversation)
+=======
+<<<<<<< HEAD
+	public GroupMessageEntity(String uname, String name1,String name2,String name3,String name4,String conversation)
+=======
+<<<<<<< HEAD
+	public GroupMessageEntity(String uname, String name1,String name2,String name3,String name4,String conversation)
+=======
+	public GroupMessageEntity(String uname, String name1,String name2,String name3,String name4,String conversation,String message)
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	{
 		this.uname = uname;
 		this.name1 = name1;
@@ -44,9 +84,46 @@ public class GroupMessageEntity {
 		this.name3 = name3;
 		this.name4 = name4;
 		this.conversation = conversation;
+<<<<<<< HEAD
 		
 	}
 	
+=======
+<<<<<<< HEAD
+		
+	}
+	
+=======
+<<<<<<< HEAD
+		
+	}
+	
+=======
+<<<<<<< HEAD
+		
+	}
+	
+=======
+<<<<<<< HEAD
+		
+	}
+	
+=======
+		this.message = message;
+	}
+	
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String M) {
+		this.message = M;
+	}
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	public void setconversation(String uName) {
 		this.conversation = uName;
 	}
@@ -101,11 +178,43 @@ public class GroupMessageEntity {
 	public Boolean saveGroupMessage() {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 		Query gaeQuery = new Query("CreateGroupMessage");
 		PreparedQuery pq = datastore.prepare(gaeQuery);
 		List<Entity> list = pq.asList(FetchOptions.Builder.withDefaults());
 
 		Entity employee = new Entity("CreateGroupMessage", list.size() + 1);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+		Query gaeQuery = new Query("SendGroupMessage");
+		PreparedQuery pq = datastore.prepare(gaeQuery);
+		List<Entity> list = pq.asList(FetchOptions.Builder.withDefaults());
+
+		Entity employee = new Entity("SendGroupMessage", list.size() + 1);
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 
 		employee.setProperty("UserName", this.uname);
 		employee.setProperty("Name1", this.name1);
@@ -113,7 +222,27 @@ public class GroupMessageEntity {
 		employee.setProperty("Name3", this.name3);
 		employee.setProperty("Name4", this.name4);
 		employee.setProperty("Conversation", this.conversation);
+<<<<<<< HEAD
 		
+=======
+<<<<<<< HEAD
+		
+=======
+<<<<<<< HEAD
+		
+=======
+<<<<<<< HEAD
+		
+=======
+<<<<<<< HEAD
+		
+=======
+		employee.setProperty("Message",this.message);
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 		
 		datastore.put(employee);
 		
@@ -121,6 +250,19 @@ public class GroupMessageEntity {
 		return true;
 
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 
 	public static boolean check(String name, String conversation_Name) {
 		
@@ -191,6 +333,20 @@ public class GroupMessageEntity {
 		return list;
 	
       }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	
 }
 

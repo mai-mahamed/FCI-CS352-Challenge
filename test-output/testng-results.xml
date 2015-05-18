@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="4" total="4" passed="0">
   <reporter-output>
   </reporter-output>
@@ -138,6 +139,21 @@
           </reporter-output>
         </test-method> <!-- CreateMyTimelinePost -->
         <test-method status="FAIL" signature="CreatePage(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FrontendTesting.PageControllerTesting@3cfbc9c9]" name="CreatePage" duration-ms="31" started-at="2015-05-15T12:07:09Z" data-provider="CreatePage" finished-at="2015-05-15T12:07:09Z">
+=======
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3893" started-at="2015-05-14T17:33:04Z" finished-at="2015-05-14T17:33:08Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3893" started-at="2015-05-14T17:33:04Z" finished-at="2015-05-14T17:33:08Z">
+      <class name="FrontendTesting.PageControllerTesting">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:FrontendTesting.PageControllerTesting@4276f4a9]" name="setUp" is-config="true" duration-ms="47" started-at="2015-05-14T17:33:04Z" finished-at="2015-05-14T17:33:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="CreatePage(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FrontendTesting.PageControllerTesting@4276f4a9]" name="CreatePage" duration-ms="3799" started-at="2015-05-14T17:33:04Z" data-provider="CreatePage" finished-at="2015-05-14T17:33:08Z">
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
           <params>
             <param index="0">
               <value>
@@ -160,6 +176,7 @@
               </value>
             </param>
           </params>
+<<<<<<< HEAD
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[OK expected:<mai> but was:<OK>]]>
@@ -201,6 +218,12 @@
           </reporter-output>
         </test-method> <!-- CreatePage -->
         <test-method status="FAIL" signature="CreatePage(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FrontendTesting.PageControllerTesting@3cfbc9c9]" name="CreatePage" duration-ms="35" started-at="2015-05-15T12:07:09Z" data-provider="CreatePage" finished-at="2015-05-15T12:07:10Z">
+=======
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreatePage -->
+        <test-method status="FAIL" signature="CreatePage(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:FrontendTesting.PageControllerTesting@4276f4a9]" name="CreatePage" duration-ms="15" started-at="2015-05-14T17:33:08Z" data-provider="CreatePage" finished-at="2015-05-14T17:33:08Z">
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
           <params>
             <param index="0">
               <value>
@@ -225,6 +248,7 @@
           </params>
           <exception class="java.lang.AssertionError">
             <message>
+<<<<<<< HEAD
               <![CDATA[Failed expected:<mai> but was:<OK>]]>
             </message>
             <full-stacktrace>
@@ -233,6 +257,17 @@
 	at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:364)
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:80)
 	at FrontendTesting.PageControllerTesting.CreatePage(PageControllerTesting.java:99)
+=======
+              <![CDATA[expected [OK] but found [Failed]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [OK] but found [Failed]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:165)
+	at FrontendTesting.PageControllerTesting.CreatePage(PageControllerTesting.java:75)
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -263,10 +298,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreatePage -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="tearDown()[pri:0, instance:FrontendTesting.PageControllerTesting@3cfbc9c9]" name="tearDown" is-config="true" duration-ms="373" started-at="2015-05-15T12:07:10Z" finished-at="2015-05-15T12:07:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+=======
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
       </class> <!-- FrontendTesting.PageControllerTesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

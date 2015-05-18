@@ -86,7 +86,19 @@ public class PageEntity {
 			return true;
 		else return false;
 	}
+<<<<<<< HEAD
 	public static String get(String pname2) {
+=======
+<<<<<<< HEAD
+	public static String get(String pname2) {
+=======
+<<<<<<< HEAD
+	public static String get(String pname2) {
+=======
+	public static PageEntity get(String pname2) {
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 		// TODO Auto-generated method stub
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -99,7 +111,20 @@ public class PageEntity {
 			
 			if (entity.getProperty("Pagename").toString().equals(pname2)) {
 				
+<<<<<<< HEAD
 				String returnedFriend=entity.getProperty("Username").toString();
+=======
+<<<<<<< HEAD
+				String returnedFriend=entity.getProperty("Username").toString();
+=======
+<<<<<<< HEAD
+				String returnedFriend=entity.getProperty("Username").toString();
+=======
+				PageEntity returnedFriend=new PageEntity(entity.getProperty("Pagename").toString(),
+						entity.getProperty("Type").toString(),entity.getProperty("Category").toString(),entity.getProperty("Username").toString());
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 				
 				
 				return returnedFriend;
@@ -109,7 +134,11 @@ public class PageEntity {
 	}
 	
 
+<<<<<<< HEAD
 	public static boolean increaseLikes(String pname){
+=======
+	public static void increaseLikes(String pname){
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
 		
@@ -134,6 +163,7 @@ public class PageEntity {
 				employee.setProperty("ActiveUsers", returnedFriend.activeUsers);
 				
 				datastore.put(employee);
+<<<<<<< HEAD
 				return true;
 				
 			}
@@ -142,5 +172,11 @@ public class PageEntity {
 		
 		return false;
 	}
+=======
+				
+			}
+	
+		}}
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	
 	}

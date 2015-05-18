@@ -70,6 +70,10 @@ import com.FCI.SWE.ServicesModels.privateSharedPostEntity;
 @Produces(MediaType.TEXT_PLAIN)
 
 public class PostServices {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * function Create My Timeline Post Service
 	 * @param name : user name
@@ -79,6 +83,11 @@ public class PostServices {
 	 * @param HashTag : hashtag of the post 
 	 * @return done or not 
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@POST
 	@Path("/CreateMyTimelinePostService")
 	public String CreateMyTimelinePostService(@FormParam("name") String name,@FormParam("Content") String Content,
@@ -119,6 +128,10 @@ public class PostServices {
 		
 	}
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * function Create My Timeline Post Service
 	 * @param name : user name
@@ -129,6 +142,12 @@ public class PostServices {
 	 * @param owner : timeline owner
 	 * @return done or not 
 	 */
+<<<<<<< HEAD
+=======
+=======
+	
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@POST
 	@Path("/CreateFriendTimelinePostService")
 	public String CreateFriendTimelinePostService(@FormParam("name") String name,@FormParam("Content") String Content,
@@ -170,11 +189,21 @@ public class PostServices {
 		return null;
 		
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * 
 	 * @param hash : statement of hashtag 
 	 * @return list of all posts that contain this hashtag 
 	 */
+<<<<<<< HEAD
+=======
+=======
+	
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	
 	@POST
 	@Path("/ShowHashtagTimelineService")
@@ -248,11 +277,21 @@ public class PostServices {
 					return array.toString();
 		
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 /**
  * 
  * @param id : user id
  * @return all hashtags with counter
  */
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@POST
 	@Path("/HashtagTrendsService")
 	
@@ -302,11 +341,21 @@ public class PostServices {
 	}
 	
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 *  
 	 * @param uname : user name
 	 * @return list with all posts in timeline
 	 */
+<<<<<<< HEAD
+=======
+=======
+	
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@POST
 	@Path("/ShowUserTimeService")
 	public String ShowPageTimeService(@FormParam("name") String uname) {
@@ -335,8 +384,22 @@ public class PostServices {
 		    object.put("UserName", list2.get(i).getUserName());
 		    object.put("Content", list2.get(i).getContent());
 		    object.put("Likes",list2.get(i).getLikes());
+<<<<<<< HEAD
 		    object.put("Privacy","private");
 		   
+=======
+<<<<<<< HEAD
+		    object.put("Privacy","private");
+		   
+=======
+<<<<<<< HEAD
+		    object.put("Privacy","private");
+		   
+=======
+		    object.put("Privacy",list1.get(i).getPrivacy());
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 			array.add(object);
 		
 	}
@@ -350,8 +413,22 @@ public class PostServices {
 		    object.put("UserName", list3.get(i).getUserName());
 		    object.put("Content", list3.get(i).getContent());
 		    object.put("Likes",list3.get(i).getLikes());
+<<<<<<< HEAD
 		    object.put("Privacy",list3.get(i).getPrivacy());
 		    object.put("WhoCanSee",list3.get(i).getWhoCanSee());
+=======
+<<<<<<< HEAD
+		    object.put("Privacy",list3.get(i).getPrivacy());
+		    object.put("WhoCanSee",list3.get(i).getWhoCanSee());
+=======
+<<<<<<< HEAD
+		    object.put("Privacy",list3.get(i).getPrivacy());
+		    object.put("WhoCanSee",list3.get(i).getWhoCanSee());
+=======
+		    object.put("Privacy",list1.get(i).getPrivacy());
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 			array.add(object);
 		
 	}
@@ -360,6 +437,10 @@ public class PostServices {
 				
 		
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	/**
 	 * 
 	 * @param name : user name
@@ -368,6 +449,12 @@ public class PostServices {
 	 * @return done or not 
 	 * @throws ParseException
 	 */
+<<<<<<< HEAD
+=======
+=======
+	
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	@POST
 	@Path("/sharePostService")
 	public String sharePostService(@FormParam("name") String name,@FormParam("Cont") String Content,
@@ -385,14 +472,36 @@ public class PostServices {
 				PublicSharedPostEntity p=new PublicSharedPostEntity(object.get("UserName").toString(),object.get("Content").toString()
 					, pr,object.get("Likes").toString(),name);
 				p.save();
+<<<<<<< HEAD
 				return "done";
+=======
+<<<<<<< HEAD
+				return "done";
+=======
+<<<<<<< HEAD
+				return "done";
+=======
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 			}
 			else if((pr.toLowerCase()).contains("private"))
 			{
 				privateSharedPostEntity p=new privateSharedPostEntity(object.get("UserName").toString(),object.get("Content").toString()
 					, pr,object.get("Likes").toString(),name);
 				p.save();
+<<<<<<< HEAD
 				return "done";
+=======
+<<<<<<< HEAD
+				return "done";
+=======
+<<<<<<< HEAD
+				return "done";
+=======
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 			}
 			else if((pr.toLowerCase()).contains("custom"))
 			{
@@ -400,13 +509,36 @@ public class PostServices {
 				CustomSharedPostEntity p=new CustomSharedPostEntity(object.get("UserName").toString(),object.get("Content").toString()
 						, pr,object.get("Likes").toString(),name,whoSee);
 				JSONObject json = new JSONObject();
+<<<<<<< HEAD
 				return "done";
+=======
+<<<<<<< HEAD
+				return "done";
+=======
+<<<<<<< HEAD
+				return "done";
+=======
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 				
 			}
 		}
 		else if((Content.toLowerCase()).contains("private"))
 		{
+<<<<<<< HEAD
 			
+=======
+<<<<<<< HEAD
+			
+=======
+<<<<<<< HEAD
+			
+=======
+			System.out.println("prsfjgoitdjhoibfoihbjfoijfgoijnfogijnoifgjnoij");
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 				 if((pr.toLowerCase()).contains("custom"))
 					{
 						String whoSee=(pr.toLowerCase()).replace("custom","");
@@ -414,13 +546,31 @@ public class PostServices {
 								, pr,object.get("Likes").toString(),name,whoSee);
 						JSONObject json = new JSONObject();
 						p.save();
+<<<<<<< HEAD
 						return "done";
+=======
+<<<<<<< HEAD
+						return "done";
+=======
+<<<<<<< HEAD
+						return "done";
+=======
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 					}
 				 else{
 				PrivateOwnerSharedPostEntity p=new PrivateOwnerSharedPostEntity(object.get("UserName").toString(),object.get("Content").toString()
 					, pr,object.get("Likes").toString(),name);
 				System.out.println("pr");
 				p.save();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 				return "done";
 				 }
 			
@@ -463,6 +613,28 @@ public class PostServices {
 			return "done";
 			 }
 		}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+				 }
+			
+		}
+	/*	else if((Privacy.toLowerCase()).contains("custom"))
+		{
+			String whoSee=(Privacy.toLowerCase()).replace("custom","");
+			PostPrivacy p=new CustomTimelinePost(name,Content,Feeling,"Custom",whoSee,owner,HashTag);
+			JSONObject json = new JSONObject();
+			if(PostBuilder.perparePost(p))
+				json.put("Status", "OK");
+			else
+				json.put("Status", "Failed");
+			return json.toJSONString();
+		}*/
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 		return null;
 		
 	}

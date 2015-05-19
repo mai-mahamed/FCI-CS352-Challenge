@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.8" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="com.FCI.SWE.Controller.Connection" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Controller/Connection.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="68" y="-77"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.FCI.SWE.Controller.UserController" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Controller/UserController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="382" y="94"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.FCI.SWE.Controller.GroupController" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Controller/GroupController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="71" y="80"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.FCI.SWE.Controller.PostController" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Controller/PostController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="748" y="279"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.FCI.SWE.Controller.PageController" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Controller/PageController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="721" y="-5"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.FCI.SWE.Models.User" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Models/User.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1023" y="59"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.FCI.SWE.Services.CustomTimelinePost" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/CustomTimelinePost.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3323" y="833"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.FCI.SWE.Services.FriendRequestCommand" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/FriendRequestCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3741" y="-30"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.FCI.SWE.Services.PublicTimelinePost" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/PublicTimelinePost.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3687" y="806"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.FCI.SWE.Services.PostBuilder" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/PostBuilder.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1288" y="-30"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.FCI.SWE.Services.PostPrivacy" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/PostPrivacy.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3672" y="478"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.FCI.SWE.Services.PageServices" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/PageServices.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1596" y="-3"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.FCI.SWE.Services.UserServices" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/UserServices.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1992" y="60"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.FCI.SWE.Services.PrivatePagePost" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/PrivatePagePost.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2420" y="806"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.FCI.SWE.Services.GroupServices" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/GroupServices.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2340" y="-30"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.FCI.SWE.Services.PrivateTimelinePost" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/PrivateTimelinePost.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4033" y="806"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="17" language="java" name="com.FCI.SWE.Services.Command" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/Command.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3918" y="280"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="18" language="java" name="com.FCI.SWE.Services.CustomPagePost" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/CustomPagePost.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2710" y="833"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.FCI.SWE.Services.PagePost" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/PagePost.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3030" y="-30"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.FCI.SWE.Services.PagePostPrivacy" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/PagePostPrivacy.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2796" y="451"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="com.FCI.SWE.Services.PublicPagePost" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/PublicPagePost.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2998" y="806"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="com.FCI.SWE.Services.Post" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/Post.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3563" y="-30"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="com.FCI.SWE.Services.PostServices" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/PostServices.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2707" y="6"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="com.FCI.SWE.Services.GMsgSubject" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/GMsgSubject.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3322" y="316"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="com.FCI.SWE.Services.Observers" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/Observers.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3240" y="-21"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="com.FCI.SWE.Services.SingleMSGCommand" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/SingleMSGCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4116" y="-30"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="com.FCI.SWE.Services.GMessageCommand" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/Services/GMessageCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3934" y="-30"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="com.FCI.SWE.ServicesModels.PublicPagePostEntity" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/ServicesModels/PublicPagePostEntity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="136" y="1169"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="com.FCI.SWE.ServicesModels.PrivatePagePostEntity" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/ServicesModels/PrivatePagePostEntity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="705" y="1169"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="com.FCI.SWE.ServicesModels.PageEntity" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/ServicesModels/PageEntity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="419" y="1169"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="com.FCI.SWE.ServicesModels.MessageEntity" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/ServicesModels/MessageEntity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="986" y="1079"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="com.FCI.SWE.ServicesModels.LikesEntity" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/ServicesModels/LikesEntity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1222" y="1052"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="com.FCI.SWE.ServicesModels.PublicTimelinePostEntity" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/ServicesModels/PublicTimelinePostEntity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1534" y="1205"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="com.FCI.SWE.ServicesModels.GroupEntity" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/ServicesModels/GroupEntity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1823" y="1097"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="com.FCI.SWE.ServicesModels.UserEntity" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/ServicesModels/UserEntity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2031" y="1097"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="com.FCI.SWE.ServicesModels.PrivateTimelinePostEntity" 
+    project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/ServicesModels/PrivateTimelinePostEntity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2760" y="1205"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="com.FCI.SWE.ServicesModels.CustomTimelinePostEntity" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/ServicesModels/CustomTimelinePostEntity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2354" y="1232"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="com.FCI.SWE.ServicesModels.GroupMessageEntity" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/ServicesModels/GroupMessageEntity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3387" y="1178"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="com.FCI.SWE.ServicesModels.FriendEntity" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/ServicesModels/FriendEntity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3082" y="1106"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="com.FCI.SWE.ServicesModels.CustomPagePostEntity" project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/ServicesModels/CustomPagePostEntity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3742" y="1169"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="com.FCI.SWE.ServicesModels.MessagesGroupMessageEntity" 
+    project="Challenge_Phase2-b" 
+    file="/Challenge_Phase2-b/src/com/FCI/SWE/ServicesModels/MessagesGroupMessageEntity.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="4082" y="1079"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <realization id="42">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="17"/>  
+  </realization>  
+  <generalization id="43">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <realization id="44">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="17"/>  
+  </realization>  
+  <generalization id="45">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <generalization id="46">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <association id="47">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="48" name="members"/>      
+      <multiplicity id="49" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="50">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <association id="51">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="52" name="p"/>      
+      <multiplicity id="53" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="54">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="17"/>  
+  </realization>  
+  <association id="55">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="56" name="s"/>      
+      <multiplicity id="57" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="58">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <association id="59">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="60" name="p"/>      
+      <multiplicity id="61" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="62">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="63" name="currentActiveUser"/>      
+      <multiplicity id="64" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="65">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

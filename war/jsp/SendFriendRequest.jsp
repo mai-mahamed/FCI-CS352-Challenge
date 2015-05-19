@@ -10,7 +10,7 @@
 <form action="/social/SendFriendRequestService" method="post">
   Name : <input type="text" name="fname" /> <br>
   <input type="submit" value="Send">
-  
+
   </form>
 </body>
 </html>

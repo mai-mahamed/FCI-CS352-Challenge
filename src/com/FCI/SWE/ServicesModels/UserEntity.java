@@ -81,6 +81,12 @@ public class UserEntity {
 	 * @return Constructed user entity
 	 */
 
+	/**
+	 * 
+	 * @param name : user name
+	 * @param pass : password
+	 * @return getting all user
+	 */
 	public static UserEntity getUser(String name, String pass) {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -100,6 +106,11 @@ public class UserEntity {
 
 		return null;
 	}
+	/**
+	 * 
+	 * @param name user name
+	 * @return all users ID
+	 */
 	public static long getUserID(String name) {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -119,7 +130,11 @@ public class UserEntity {
 		return -1;
 	}
 	
-	
+	/**
+	 * 
+	 * @param id : user ID
+	 * @return all users name
+	 */
 	public static String getUserName(long id) {
   
 		DatastoreService datastore = DatastoreServiceFactory

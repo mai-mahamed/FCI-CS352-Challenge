@@ -22,16 +22,84 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.glassfish.jersey.server.mvc.Viewable;
+<<<<<<< HEAD
 import org.json.simple.JSONArray;
+=======
+<<<<<<< HEAD
+import org.json.simple.JSONArray;
+=======
+<<<<<<< HEAD
+import org.json.simple.JSONArray;
+=======
+<<<<<<< HEAD
+import org.json.simple.JSONArray;
+=======
+<<<<<<< HEAD
+import org.json.simple.JSONArray;
+=======
+<<<<<<< HEAD
+import org.json.simple.JSONArray;
+=======
+<<<<<<< HEAD
+import org.json.simple.JSONArray;
+=======
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import com.FCI.SWE.Models.User;
 import com.FCI.SWE.ServicesModels.FriendEntity;
+<<<<<<< HEAD
 import com.FCI.SWE.ServicesModels.GroupMessageEntity;
 import com.FCI.SWE.ServicesModels.MessageEntity;
 import com.FCI.SWE.ServicesModels.UserEntity;
+=======
+<<<<<<< HEAD
+import com.FCI.SWE.ServicesModels.GroupMessageEntity;
+import com.FCI.SWE.ServicesModels.MessageEntity;
+import com.FCI.SWE.ServicesModels.UserEntity;
+=======
+<<<<<<< HEAD
+import com.FCI.SWE.ServicesModels.GroupMessageEntity;
+import com.FCI.SWE.ServicesModels.MessageEntity;
+import com.FCI.SWE.ServicesModels.UserEntity;
+=======
+<<<<<<< HEAD
+import com.FCI.SWE.ServicesModels.GroupMessageEntity;
+import com.FCI.SWE.ServicesModels.MessageEntity;
+import com.FCI.SWE.ServicesModels.UserEntity;
+=======
+<<<<<<< HEAD
+import com.FCI.SWE.ServicesModels.GroupMessageEntity;
+import com.FCI.SWE.ServicesModels.MessageEntity;
+import com.FCI.SWE.ServicesModels.UserEntity;
+=======
+<<<<<<< HEAD
+import com.FCI.SWE.ServicesModels.GroupMessageEntity;
+import com.FCI.SWE.ServicesModels.MessageEntity;
+import com.FCI.SWE.ServicesModels.UserEntity;
+=======
+<<<<<<< HEAD
+import com.FCI.SWE.ServicesModels.GroupMessageEntity;
+import com.FCI.SWE.ServicesModels.MessageEntity;
+import com.FCI.SWE.ServicesModels.UserEntity;
+=======
+import com.FCI.SWE.ServicesModels.UserEntity;
+
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 /**
  * This class contains REST services, also contains action function for web
  * application
@@ -126,7 +194,34 @@ public class UserServices
 
 	}
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	///////////////////////////////////////////////////////////////
 	/**
 	 * 
@@ -200,6 +295,7 @@ public class UserServices
 	@Path("/SendFriendMessageService")
 	public String SendFriendMessageService(@FormParam("FriendName") String uname,@FormParam("Message")String msg, @FormParam("UserName") String Currentuser)
 	{
+<<<<<<< HEAD
 		JSONObject object2 = new JSONObject() ;
 		MessageEntity fuser=new MessageEntity(Currentuser,uname,msg) ;
 		fuser.saveFriendUser() ;
@@ -211,6 +307,22 @@ public class UserServices
 
 	
 
+=======
+		JSONObject object2 = new JSONObject();
+		MessageEntity fuser=new MessageEntity(Currentuser,uname,msg);
+		fuser.saveFriendUser();
+		    object2.put("Status","OK");
+
+		return object2.toString();
+		
+	}
+
+<<<<<<< HEAD
+=======
+	
+
+<<<<<<< HEAD
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	
 	/**
 	 * 
@@ -220,12 +332,20 @@ public class UserServices
 	
 	@POST
 	@Path("/ShowMessageService")
+<<<<<<< HEAD
 	public String ShowMessageService(@FormParam("ID") long id) 
 	{
 		Command c=new SingleMSGCommand() ;
 		String user=c.exec(id) ;
 		
 		return user ;
+=======
+	public String ShowMessageService(@FormParam("ID") long id) {
+		Command c=new SingleMSGCommand();
+		String user=c.exec(id);
+		
+		return user;
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 
 	}
 	/**
@@ -238,11 +358,173 @@ public class UserServices
 	 * @param conversation : name of  conversation
 	 * @return done or not
 	 */
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+	
+	@POST
+	@Path("/SendFriendMessageService")
+	public String SendFriendMessageService(@FormParam("FriendName") String uname,@FormParam("Message")String msg, @FormParam("UserName") String Currentuser)
+	{
+		JSONObject object2 = new JSONObject();
+		MessageEntity fuser=new MessageEntity(Currentuser,uname,msg);
+		fuser.saveFriendUser();
+		    object2.put("Status","OK");
+
+		return object2.toString();
+		
+	}
+
+<<<<<<< HEAD
+	
+
+	
+	
+	
+	@POST
+	@Path("/ShowMessageService")
+	public String ShowMessageService(@FormParam("ID") long id) {
+		Command c=new SingleMSGCommand();
+		String user=c.exec(id);
+		
+		return user;
+
+	}
+	
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
 	
 	@POST
 	@Path("/CreateGroupChatService")
 	public String CreateGroupChatService(@FormParam("Name") String name ,@FormParam("Name1") String name1 , @FormParam("Name2") String name2 , @FormParam("Name3") String name3 ,@FormParam("Name4") String name4 , @FormParam("Conversation") String conversation)
 	{
+		JSONObject object2 = new JSONObject();
+		
+		GMsgSubject s=new GMsgSubject();
+		s.addNewConversation(name ,name1 ,name2 ,name3 ,name4 ,conversation);
+		
+		    object2.put("Status","OK");
+
+<<<<<<< HEAD
+	
+	/**
+	 * 
+	 * @param id : user id
+	 * @return user
+	 */
+	
+	@POST
+	@Path("/ShowMessageService")
+	public String ShowMessageService(@FormParam("ID") long id) {
+		Command c=new SingleMSGCommand();
+		String user=c.exec(id);
+		
+		return user;
+
+	}
+	/**
+	 * 
+	* @param name : member in conversation
+	 * @param name1 : member in conversation
+	 * @param name2 : member in conversation
+	 * @param name3 : member in conversation
+	 * @param name4 : member in conversation
+	 * @param conversation : name of  conversation
+	 * @return done or not
+	 */
+=======
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+	
+
+	
+	
+<<<<<<< HEAD
+=======
+=======
+	@POST
+	@Path("/SendGroupChatService")
+	public String SendGroupChatService(@FormParam("Name") String name ,@FormParam("Name1") String name1 , @FormParam("Name2") String name2 , @FormParam("Name3") String name3 ,@FormParam("Name4") String name4 , @FormParam("Conversation") String conversation , @FormParam("Message") String message)
+	{
+		JSONObject object2 = new JSONObject();
+		
+		GroupMessageEntity fuser=new GroupMessageEntity(name, name1,name2,name3,name4,conversation,message);
+		fuser.saveGroupMessage();
+		    object2.put("Status","OK");
+
+		return object2.toString();
+		
+	}
+
+	
+	@POST
+	@Path("/ShowNotificationService")
+	public String ShowNotificationService(@FormParam("ID") long id) {
+		
+		
+		JSONArray array=new JSONArray();
+		Vector<Long> user= new Vector<Long>();
+		 user= FriendEntity.getAllFriendsIDList(id);
+		
+			for(int i=0;i<user.size();i++){
+			String name=UserEntity.getUserName(user.get(i));
+			JSONObject object = new JSONObject();
+			object.put("name", name);
+			array.add(object);
+			//System.out.println("retJson:  "+array.toString());
+			}
+			
+		return array.toString();
+
+	}
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+	
+	@POST
+	@Path("/ShowMessageService")
+	public String ShowMessageService(@FormParam("ID") long id) {
+<<<<<<< HEAD
+		Command c=new SingleMSGCommand();
+		String user=c.exec(id);
+=======
+<<<<<<< HEAD
+		Command c=new SingleMSGCommand();
+		String user=c.exec(id);
+=======
+		String name=UserEntity.getUserName(id);
+		String user= MessageEntity.getAllMessagesList(name);
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+		
+		return user;
+
+	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+	
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
+	
+	@POST
+	@Path("/CreateGroupChatService")
+	public String CreateGroupChatService(@FormParam("Name") String name ,@FormParam("Name1") String name1 , @FormParam("Name2") String name2 , @FormParam("Name3") String name3 ,@FormParam("Name4") String name4 , @FormParam("Conversation") String conversation)
+	{
+<<<<<<< HEAD
 		JSONObject object2 = new JSONObject() ;
 		
 		GMsgSubject s=new GMsgSubject() ;
@@ -253,6 +535,29 @@ public class UserServices
 		return object2.toString() ;
 		
 	}
+=======
+		JSONObject object2 = new JSONObject();
+		
+		GMsgSubject s=new GMsgSubject();
+		s.addNewConversation(name ,name1 ,name2 ,name3 ,name4 ,conversation);
+		
+		    object2.put("Status","OK");
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+
+		return object2.toString();
+		
+	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 /**
  * 
  * add new message to conversation
@@ -261,12 +566,37 @@ public class UserServices
  * @param name : user name
  * @return done or not
  */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+
+=======
+=======
+=======
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+		return object2.toString();
+		
+	}
+
+<<<<<<< HEAD
+=======
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	
 	@POST
 	@Path("/SendToGroupChatService")
 	public String SendToGroupChatService(@FormParam("Name")String name,@FormParam("Conversation_Name") String Conversation_Name , @FormParam("message") String msg)
 	{
 		
+<<<<<<< HEAD
 		JSONObject object2 = new JSONObject() ;
 		boolean found = GroupMessageEntity.check(name,Conversation_Name) ;
 		if(found)
@@ -282,15 +612,36 @@ public class UserServices
 			
 			object2.put("Status","Failed");
 			}
+=======
+		JSONObject object2 = new JSONObject();
+		boolean found=GroupMessageEntity.check(name,Conversation_Name);
+		if(found){
+		
+		GMsgSubject s=new GMsgSubject();
+		s.addNewMsg(Conversation_Name,msg,name);
+		
+		    object2.put("Status","OK");}
+		else{
+			
+			object2.put("Status","Failed");}
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 
 		return object2.toString();
 		
 	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	/**
 	 * 
 	 * @param id : user id 
 	 * @return all friend requests send to user
 	 */
+<<<<<<< HEAD
 	@POST
 	@Path("/ShowNotificationService")
 	public String ShowNotificationService(@FormParam("ID") long id) 
@@ -302,20 +653,58 @@ public class UserServices
 		return array ;
 
 	}
+=======
+<<<<<<< HEAD
+=======
+=======
+	
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+	@POST
+	@Path("/ShowNotificationService")
+	public String ShowNotificationService(@FormParam("ID") long id) {
+		
+		Command c=new FriendRequestCommand();
+		String array=c.exec(id);
+			
+		return array;
+
+	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	/**
 	 * 
 	 * @param id : user id
 	 * @return all group messages 
 	 */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	@POST
 	@Path("/ShowGroupMessageService")
 	public String ShowGroupMessageService(@FormParam("ID") long id) {
 		
+<<<<<<< HEAD
 		Command c = new GMessageCommand() ;
 		String array=c.exec(id) ; 
 		
 
 		return array ;
+=======
+		Command c=new GMessageCommand();
+		String array=c.exec(id);
+		
+
+		return array;
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 
 	}
 }

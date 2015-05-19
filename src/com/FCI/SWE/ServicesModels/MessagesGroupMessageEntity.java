@@ -48,10 +48,13 @@ public class MessagesGroupMessageEntity {
 	
 
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * Saving all group message in data store 
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public Boolean saveMessageGroupMessage() {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -73,11 +76,14 @@ public class MessagesGroupMessageEntity {
 	}
 
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param conversation_Name : name of conversation 
 	 * checking all group message
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static Vector<MessagesGroupMessageEntity> check(String conversation_Name) {
 		Vector<MessagesGroupMessageEntity> list = new Vector<MessagesGroupMessageEntity>();
 		DatastoreService datastore = DatastoreServiceFactory

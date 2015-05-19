@@ -26,11 +26,14 @@ public class PrivateOwnerSharedPostEntity {
 		this.Name=Name;
 		this.Privacy=Privacy;
 	}
+<<<<<<< HEAD
 	
 	/**
 	 * 
 	 * @return Saving shared posts with public privacy
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 public  boolean save() {
 		
 		DatastoreService datastore = DatastoreServiceFactory

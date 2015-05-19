@@ -27,11 +27,14 @@ public class PublicSharedPostEntity {
 		this.Name=Name;
 		this.Privacy=Privacy;
 	}
+<<<<<<< HEAD
 	
 	/**
 	 * 
 	 * Saving all shared posts with public privacy
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 public  boolean save() {
 		
 		DatastoreService datastore = DatastoreServiceFactory
@@ -51,10 +54,21 @@ public  boolean save() {
 		group.setProperty("Privacy", this.Privacy);
 		if(datastore.put(group).isComplete())
 			{
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 			return true;
 			}
 		else 
 			return false;
+<<<<<<< HEAD
+=======
+=======
+			return true;}
+		else return false;
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	}
 
 	

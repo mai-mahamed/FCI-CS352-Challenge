@@ -27,11 +27,15 @@ public class CustomOwnerSharedPostEntity {
 		this.Privacy=Privacy;
 		this.whoSee=whoSee;
 	}
+<<<<<<< HEAD
 	/**
 	 * 
 	 * Saving shared posts in data store
 	 */
 	public  boolean save() {
+=======
+public  boolean save() {
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 		
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();

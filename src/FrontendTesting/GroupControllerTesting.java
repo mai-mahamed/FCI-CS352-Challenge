@@ -13,6 +13,13 @@ import org.testng.annotations.Test;
 
 import com.FCI.SWE.Controller.Connection;
 import com.FCI.SWE.Controller.GroupController;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+import com.FCI.SWE.Controller.PageController;
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 import com.FCI.SWE.Models.User;
 
 public class GroupControllerTesting {
@@ -32,6 +39,10 @@ public class GroupControllerTesting {
 		return new Object[][]{{"OK",s2,s3,s4},{"Failed",s6,s7,s8}} ;
 	}
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	/**
 	 * 
 	 * @param name : name of group
@@ -39,6 +50,11 @@ public class GroupControllerTesting {
 	 * @param privacy : privacy of this group
 	 * @return
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public String createGroup(@FormParam("name") String name,
 			@FormParam("desc") String desc, @FormParam("privacy") String privacy) {
 
@@ -66,6 +82,10 @@ public class GroupControllerTesting {
 		return null;
 	}
 	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	/**
 	 * 
 	 * @param result : showing for the result of testing this function
@@ -73,6 +93,11 @@ public class GroupControllerTesting {
 	 * @param cat : category of group
 	 * @param PageName : name of page
 	 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	@Test(dataProvider="CreateGroup")
 	public void CreateGroup(String result, String type,String cat,
 			String PageName) {

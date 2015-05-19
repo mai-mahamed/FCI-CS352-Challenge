@@ -98,11 +98,15 @@ public class PrivateTimelinePostEntity {
 		Hashtags = hashtags;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param privateTimelinePost : posts with private privacy
 	 * @return Saving posts with private privacy
 	 */
+=======
+	
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static boolean save(PrivateTimelinePost privateTimelinePost) {
 		// TODO Auto-generated method stub
 		
@@ -130,11 +134,14 @@ public class PrivateTimelinePostEntity {
 
 	
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param hash : hashtag
 	 * @return getting all hashtags
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static Vector<PrivateTimelinePost> getAllList(String hash) {
 		// TODO Auto-generated method stub
 		DatastoreService datastore = DatastoreServiceFactory
@@ -163,10 +170,13 @@ public class PrivateTimelinePostEntity {
 
 
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @return getting all lists counts
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static List<String> getAllListCount() {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -186,11 +196,15 @@ public class PrivateTimelinePostEntity {
 	}
 
 
+<<<<<<< HEAD
 /**
  * 
  * @param uname : user name
  * @return checking users name
  */
+=======
+
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static Vector<PrivateTimelinePostEntity> check(String uname) {
 	
 			// TODO Auto-generated method stub
@@ -211,10 +225,34 @@ public class PrivateTimelinePostEntity {
 								
 						PrivateTimelinePostEntity returnedFriend=new PrivateTimelinePostEntity(entity.getProperty("UserName").toString(),
 								entity.getProperty("Content").toString(),entity.getProperty("Feeling").toString(),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 								"private",entity.getProperty("Timeline'sOwner").toString(),Integer.parseInt(entity.getProperty("Likes").toString()),
 								entity.getProperty("Hashtags").toString());
 						returnedFriend.setPrivacy("private");
 						 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+								entity.getProperty("Privacy").toString(),entity.getProperty("Timeline'sOwner").toString(),Integer.parseInt(entity.getProperty("Likes").toString()),
+								entity.getProperty("Hashtags").toString());
+						
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 						list.add(returnedFriend);
 						
 						

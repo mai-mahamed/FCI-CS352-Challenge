@@ -3,12 +3,27 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="BackendTesting.LikesEntityTesting">
         <methods>
           <include name="checkaccess"/>
           <include name="save"/>
         </methods>
       </class> <!-- BackendTesting.LikesEntityTesting -->
+=======
+      <class name="FrontendTesting.PageControllerTesting">
+        <methods>
+<<<<<<< HEAD
+          <include name="tearDown"/>
+          <include name="CreateMyTimelinePost" invocation-numbers="0 1"/>
+          <include name="CreatePage" invocation-numbers="0 1"/>
+=======
+          <include name="CreatePage" invocation-numbers="1"/>
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- FrontendTesting.PageControllerTesting -->
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

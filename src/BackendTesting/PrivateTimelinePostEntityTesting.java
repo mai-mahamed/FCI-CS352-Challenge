@@ -1,7 +1,10 @@
 package BackendTesting;
 
+<<<<<<< HEAD
 import java.util.Vector;
 
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,6 +22,7 @@ public class PrivateTimelinePostEntityTesting {
 		Assert.assertEquals(PrivateTimelinePostEntity.save(privateTimelinePost),true);
 		
 	}
+<<<<<<< HEAD
 	
 	@Test
 	  public void getAllList() {
@@ -45,4 +49,6 @@ public class PrivateTimelinePostEntityTesting {
 
 		  Assert.assertEquals(list.size(),2);
 	  }
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 }

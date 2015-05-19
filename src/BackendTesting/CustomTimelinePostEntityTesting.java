@@ -11,9 +11,12 @@ import com.FCI.SWE.ServicesModels.CustomTimelinePostEntity;
 
 public class CustomTimelinePostEntityTesting {
 
+<<<<<<< HEAD
 	/**
 	 * Saving Posts in timeline with custom privacy
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	@Test
 	public void save(){
 		//CustomTimelinePostEntity CE = new CustomTimelinePostEntity("mai", "Hello", "happy", "custom", "m", 4, "love", "n");
@@ -21,9 +24,12 @@ public class CustomTimelinePostEntityTesting {
 		Assert.assertEquals(CustomTimelinePostEntity.save(customTimelinePost), true);
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * return all lists
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public void getAllList() {
 	    //throw new RuntimeException("Test not implemented");
 		
@@ -32,9 +38,12 @@ public class CustomTimelinePostEntityTesting {
 		  Assert.assertEquals(list.size(),1);
 	  }
 	
+<<<<<<< HEAD
 	/**
 	 * return all lists with its counts
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	@Test
 	  public void getAllListCount() {
 	    //throw new RuntimeException("Test not implemented");
@@ -44,9 +53,12 @@ public class CustomTimelinePostEntityTesting {
 		  Assert.assertEquals(list.size(),8);
 	  }
 	
+<<<<<<< HEAD
 	/**
 	 * check access in data store
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	@Test
 	  public void checkaccess() {
 	    //throw new RuntimeException("Test not implemented");

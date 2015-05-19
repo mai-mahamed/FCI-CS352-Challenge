@@ -77,10 +77,13 @@ public class MessageEntity {
 	 */
 
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * Saving friend in data store
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public Boolean saveFriendUser() {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -100,11 +103,14 @@ public class MessageEntity {
 
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param name : user name
 	 * @return : Getting all message from data store
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static String getAllMessagesList(String name){
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();

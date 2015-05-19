@@ -36,11 +36,14 @@ public class PublicPagePostEntity {
 		PostSeen = seen;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param publicPagePost : page's posts with public privacy
 	 * @return saving page's posts with public privacy
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static boolean save(PublicPagePost publicPagePost) {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -114,12 +117,15 @@ public class PublicPagePostEntity {
 		PostSeen = seen;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param conversation_Name : conversation name
 	 * @param name : user name
 	 * @return checking all user name & conversation name
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static Vector<PublicPagePostEntity> check(String conversation_Name,String name) {
 		Vector<PublicPagePostEntity> list = new Vector<PublicPagePostEntity>();
 		DatastoreService datastore = DatastoreServiceFactory
@@ -132,8 +138,28 @@ public class PublicPagePostEntity {
 			if(entity.getProperty("PageName").toString().equals(conversation_Name))
 			{
 				long key=entity.getKey().getId();
+<<<<<<< HEAD
 				String a=PageEntity.get(conversation_Name);
 				if(a.equals(name)){
+=======
+<<<<<<< HEAD
+				String a=PageEntity.get(conversation_Name);
+				if(a.equals(name)){
+=======
+<<<<<<< HEAD
+				String a=PageEntity.get(conversation_Name);
+				if(a.equals(name)){
+=======
+<<<<<<< HEAD
+				String a=PageEntity.get(conversation_Name);
+				if(a.equals(name)){
+=======
+				PageEntity a=PageEntity.get(conversation_Name);
+				if(a.getUname()==name){
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 					PublicPagePostEntity p=new PublicPagePostEntity(entity.getProperty("UserName").toString(),entity.getProperty("Content").toString()
 							,entity.getProperty("Privacy").toString()
 							,Integer.parseInt(entity.getProperty("Likes").toString())
@@ -158,6 +184,7 @@ public class PublicPagePostEntity {
 	
 	return list;
 }
+<<<<<<< HEAD
 	
 	/**
 	 * 
@@ -165,6 +192,13 @@ public class PublicPagePostEntity {
 	 * @return increasing seen
 	 */
 	public static boolean increaseSeen(long ID){
+=======
+<<<<<<< HEAD
+	public static boolean increaseSeen(long ID){
+=======
+	public static void increaseSeen(long ID){
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
 		
@@ -189,11 +223,24 @@ public class PublicPagePostEntity {
 				group.setProperty("PostSeen", (p.getSeen()+1));
 				
 				datastore.put(group);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 				return true ;
 			}
 	
 		}
 		return false;
+<<<<<<< HEAD
+=======
+=======
+				
+			}
+	
+		}
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 		
 	}
 }

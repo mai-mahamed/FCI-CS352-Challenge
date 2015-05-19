@@ -11,7 +11,11 @@ public class CustomOwnerSharePostEntityTesting {
 	
 	/**
 	 * 
+<<<<<<< HEAD
 	 * @return saving posts with custom privacy 
+=======
+	 * @return saving posts
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	 */
 	@DataProvider(name="saveTest")
 	

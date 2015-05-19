@@ -26,10 +26,14 @@ private String UserName;
 		this.Privacy=Privacy;
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @return Saving PrivateSharedPostEntity in data store
 	 */
+=======
+	
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 public  boolean save() {
 		
 		DatastoreService datastore = DatastoreServiceFactory

@@ -86,11 +86,14 @@ public class PublicTimelinePostEntity {
 		Hashtags = hashtags;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param publicTimelinePost : object form PublicTimelinePost class
 	 * Saving PublicTimelinePost in data store
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static boolean save(PublicTimelinePost publicTimelinePost) {
 		
 		DatastoreService datastore = DatastoreServiceFactory
@@ -115,11 +118,14 @@ public class PublicTimelinePostEntity {
 		else return false;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param hash : hash tags
 	 * @return getting all lists of PublicTimelinePost
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static Vector<PublicTimelinePost> getAllList(String hash) {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -145,10 +151,13 @@ public class PublicTimelinePostEntity {
 		return list;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @return getting all list counts from data store
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static List<String> getAllListCount() {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -167,6 +176,7 @@ public class PublicTimelinePostEntity {
 		return list;
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param userName : user name
@@ -177,6 +187,8 @@ public class PublicTimelinePostEntity {
 	 * @param likes : likes of post
 	 * @param hashtags : hashtag in any post
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public PublicTimelinePostEntity(String userName, String content,
 			String feeling, String privacy, String owner, int likes,
 			String hashtags) {
@@ -191,11 +203,14 @@ public class PublicTimelinePostEntity {
 	}
 
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param uname : user name
 	 * @return checking all user name
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static Vector<PublicTimelinePostEntity> check(String uname) {
 			Vector<PublicTimelinePostEntity> list = new Vector<PublicTimelinePostEntity>();
 			DatastoreService datastore = DatastoreServiceFactory

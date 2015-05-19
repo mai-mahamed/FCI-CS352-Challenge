@@ -44,7 +44,36 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="lib" path="D:/Programms/eclipse/appengine-testing-1.9.18.jar"/>
+=======
+<<<<<<< HEAD
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Programms/eclipse/appengine-testing-1.9.18.jar"/>
+=======
+<<<<<<< HEAD
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Programms/eclipse/appengine-testing-1.9.18.jar"/>
+=======
+<<<<<<< HEAD
+	<classpathentry kind="lib" path="F:/SW2/jstl-1.2.jar"/>
+=======
+<<<<<<< HEAD
+	<classpathentry kind="lib" path="F:/SW2/jstl-1.2.jar"/>
+=======
+<<<<<<< HEAD
+	<classpathentry kind="lib" path="F:/SW2/jstl-1.2.jar"/>
+=======
+<<<<<<< HEAD
+	<classpathentry kind="lib" path="F:/SW2/jstl-1.2.jar"/>
+=======
+>>>>>>> f361c47c5a73c19bc593b2844bfb444cb0c6be40
+>>>>>>> e549c54537cb4d303bcbc0bcd68d25eb677ac60e
+>>>>>>> e55f3b0c9652a5e4c98922e3768db182dac76a58
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>

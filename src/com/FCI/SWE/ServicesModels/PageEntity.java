@@ -64,11 +64,14 @@ public class PageEntity {
 		this.likes=0;
 		this.activeUsers=0;
 	}
+<<<<<<< HEAD
 	
 	/**
 	 * 
 	 * @return Saving pages in data store
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public boolean savePage() {
 		// TODO Auto-generated method stub
 		DatastoreService datastore = DatastoreServiceFactory
@@ -91,6 +94,7 @@ public class PageEntity {
 			return true;
 		else return false;
 	}
+<<<<<<< HEAD
 	
 	/**
 	 * 
@@ -98,6 +102,21 @@ public class PageEntity {
 	 * @return page name
 	 */
 	public static String get(String pname2) {
+=======
+<<<<<<< HEAD
+	public static String get(String pname2) {
+=======
+<<<<<<< HEAD
+	public static String get(String pname2) {
+=======
+<<<<<<< HEAD
+	public static String get(String pname2) {
+=======
+	public static PageEntity get(String pname2) {
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 		// TODO Auto-generated method stub
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -110,7 +129,24 @@ public class PageEntity {
 			
 			if (entity.getProperty("Pagename").toString().equals(pname2)) {
 				
+<<<<<<< HEAD
 				String returnedFriend=entity.getProperty("Username").toString();
+=======
+<<<<<<< HEAD
+				String returnedFriend=entity.getProperty("Username").toString();
+=======
+<<<<<<< HEAD
+				String returnedFriend=entity.getProperty("Username").toString();
+=======
+<<<<<<< HEAD
+				String returnedFriend=entity.getProperty("Username").toString();
+=======
+				PageEntity returnedFriend=new PageEntity(entity.getProperty("Pagename").toString(),
+						entity.getProperty("Type").toString(),entity.getProperty("Category").toString(),entity.getProperty("Username").toString());
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 				
 				
 				return returnedFriend;
@@ -120,12 +156,20 @@ public class PageEntity {
 	}
 	
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param pname : page name
 	 * @return numbers of likes
 	 */
 	public static boolean increaseLikes(String pname){
+=======
+<<<<<<< HEAD
+	public static boolean increaseLikes(String pname){
+=======
+	public static void increaseLikes(String pname){
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
 		
@@ -150,6 +194,10 @@ public class PageEntity {
 				employee.setProperty("ActiveUsers", returnedFriend.activeUsers);
 				
 				datastore.put(employee);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 				return true;
 				
 			}
@@ -158,5 +206,14 @@ public class PageEntity {
 		
 		return false;
 	}
+<<<<<<< HEAD
+=======
+=======
+				
+			}
+	
+		}}
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	
 	}

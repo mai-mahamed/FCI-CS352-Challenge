@@ -111,11 +111,14 @@ public class CustomTimelinePostEntity {
 		WhoCanSee = whoCanSee;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param customTimelinePost object from CustomTimelinePost class
 	 * Saving CustomTimelinePost in data store
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static boolean save(CustomTimelinePost customTimelinePost) {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -139,11 +142,14 @@ public class CustomTimelinePostEntity {
 		else return false;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param hash hashtags
 	 * @return get all hashtags ID
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static Vector<CustomTimelinePost> getAllList(String hash) {
 		// TODO Auto-generated method stub
 		DatastoreService datastore = DatastoreServiceFactory
@@ -172,10 +178,13 @@ public class CustomTimelinePostEntity {
 
 
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @return getting all lists counts for hashtags
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static List<String> getAllListCount() {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -193,11 +202,14 @@ public class CustomTimelinePostEntity {
 		return list;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param uname : user name
 	 * @return checking access in data store
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static Vector<CustomTimelinePostEntity> checkaccess(String uname) {
 		Vector<CustomTimelinePostEntity> list = new Vector<CustomTimelinePostEntity>();
 		DatastoreService datastore = DatastoreServiceFactory

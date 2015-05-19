@@ -81,11 +81,14 @@ public class CustomPagePostEntity {
 		Seen = seen;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param customPagePost : object from CustomPagePost class
 	 * Saving page's post with custom privacy
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static boolean save(CustomPagePost customPagePost) {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -108,12 +111,15 @@ public class CustomPagePostEntity {
 		else return false;
 	}
 
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param pname : [age name
 	 * @param uname : user name
 	 * check access
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static Vector<CustomPagePostEntity> checkaccess(String pname, String uname) {
 		Vector<CustomPagePostEntity> list = new Vector<CustomPagePostEntity>();
 		DatastoreService datastore = DatastoreServiceFactory
@@ -123,6 +129,16 @@ public class CustomPagePostEntity {
 		PreparedQuery pq = datastore.prepare(gaeQuery);
 		for (Entity entity : pq.asIterable()) {
 			System.out.println(entity.getProperty("WhoCanSee").toString());
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 			String a=PageEntity.get(pname);
 			if(entity.getProperty("WhoCanSee").toString().contains(uname)||a.equals(uname))
 			{
@@ -149,6 +165,27 @@ public class CustomPagePostEntity {
 				
 						
 				
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+			if(entity.getProperty("WhoCanSee").toString().contains(uname))
+			{
+				long key=entity.getKey().getId();
+						
+				CustomPagePostEntity p=new CustomPagePostEntity(entity.getProperty("UserName").toString(),entity.getProperty("Content").toString()
+						,entity.getProperty("Privacy").toString()
+						,Integer.parseInt(entity.getProperty("Likes").toString())
+						,entity.getProperty("PageName").toString(),1);	
+				increaseSeen(key);
+				list.add(p);
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 				
 				
 			   }
@@ -159,10 +196,14 @@ public class CustomPagePostEntity {
 	}
 	
 	
+<<<<<<< HEAD
 	/**
 	 * 
 	 * @param ID : user ID
 	 */
+=======
+	
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static void increaseSeen(long ID){
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -186,7 +227,23 @@ public class CustomPagePostEntity {
 				group.setProperty("Privacy", p.getPrivacy());
 				group.setProperty("PageName", p.getPageName());
 				group.setProperty("PostSeen", (p.getSeen()+1));
+<<<<<<< HEAD
 				group.setProperty("WhoCanSee", (p.getSeen()+1));
+=======
+<<<<<<< HEAD
+				group.setProperty("WhoCanSee", (p.getSeen()+1));
+=======
+<<<<<<< HEAD
+				group.setProperty("WhoCanSee", (p.getSeen()+1));
+=======
+<<<<<<< HEAD
+				group.setProperty("WhoCanSee", (p.getSeen()+1));
+=======
+				
+>>>>>>> 03152846dbbe0d049207fe46386a2f5da3dd7061
+>>>>>>> d293d0515af81388349236d24a3aec7554c709a2
+>>>>>>> b4bce9d46968d253f312331916dbea989824bfcd
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 				datastore.put(group);
 				
 			}

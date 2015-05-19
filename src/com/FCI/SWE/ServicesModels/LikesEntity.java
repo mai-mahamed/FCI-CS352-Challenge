@@ -33,11 +33,14 @@ public class LikesEntity {
 		UName = uName;
 		Name_Page = name_Page;
 	}
+<<<<<<< HEAD
 	
 	/**
 	 * 
 	 * @return Saving likes in data sore
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public   Boolean save() {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
@@ -58,6 +61,7 @@ public class LikesEntity {
 		return true;
 
 	}
+<<<<<<< HEAD
 	
 	/**
 	 * 
@@ -65,6 +69,8 @@ public class LikesEntity {
 	 * @param uname2 : user name
 	 * @return checking access in data store
 	 */
+=======
+>>>>>>> ed6cdda22f362a9816aed254c00b74fc2be43805
 	public static boolean checkaccess(String pname, String uname2) {
 		DatastoreService datastore = DatastoreServiceFactory
 				.getDatastoreService();
